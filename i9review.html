@@ -1,0 +1,1013 @@
+﻿<!DOCTYPE html>
+<!--
+BeyondAdmin - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.6
+Version: 1.6.0
+Purchase: https://wrapbootstrap.com/theme/beyondadmin-adminapp-angularjs-mvc-WB06R48S4
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Head -->
+<head>
+    <meta charset="utf-8" />
+    <title>Review Details</title>
+
+    <meta name="description" content="blank page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--Basic Styles-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/weather-icons.min.css" rel="stylesheet" />
+
+    <!--Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300"
+          rel="stylesheet" type="text/css">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="assets/css/beyond.min.css" rel="stylesheet" />
+    <link href="assets/css/demo.min.css" rel="stylesheet" />
+    <link href="assets/css/typicons.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link id="skin-link" href="" rel="stylesheet" type="text/css" />
+
+    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+    <script src="assets/js/skins.min.js"></script>
+	
+	<style>
+	.wizard.wizard-wired ul li {width:7.6%;}
+	.form-group p {margin-top:5px;}
+	.form-horizontal .control-label {text-align:left;}
+	.help-block {font-size:9px; line-height:16px;}
+	
+	input[type=checkbox]~.text, input[type=radio]~.text {margin-right:30px;}
+	.form-horizontal .form-group {margin-left:0px; margin-right:0px;}
+.footer {
+    position: fixed;
+    height: 40px;
+    bottom: 0;
+    width: 100%;
+}
+
+	</style>
+</head>
+<!-- /Head -->
+<!-- Body -->
+<body>
+    <!-- Loading Container -->
+    <div class="loading-container">
+        <div class="loader"></div>
+    </div>
+    <!--  /Loading Container -->
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-container">
+                <!-- Navbar Barnd -->
+                <div class="navbar-header pull-left">
+                    <a href="#" class="navbar-brand" style="margin-top:8px;">
+                        <!--small>
+                            <img src="assets/img/logo.png" alt="" />
+                        </small-->
+						PCR Onboard
+                    </a>
+                </div>
+                <!-- /Navbar Barnd -->
+                <!-- Sidebar Collapse -->
+                <div class="sidebar-collapse" id="sidebar-collapse">
+                    <i class="collapse-icon fa fa-bars"></i>
+                </div>
+                <!-- /Sidebar Collapse -->
+                <!-- Account Area and Settings --->
+                <div class="navbar-header pull-right">
+                    <div class="navbar-account">
+                        <ul class="account-area">
+                            <li>
+                                <a class=" dropdown-toggle" data-toggle="dropdown" title="Notifications" href="#">
+                                    <i class="icon fa fa-warning"></i>
+                                </a>
+                                <!--Notification Dropdown-->
+                                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-notifications">
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <div class="notification-icon">
+                                                    <i class="fa fa-phone bg-themeprimary white"></i>
+                                                </div>
+                                                <div class="notification-body">
+                                                    <span class="title">Skype meeting with Patty</span>
+                                                    <span class="description">01:00 pm</span>
+                                                </div>
+                                                <div class="notification-extra">
+                                                    <i class="fa fa-clock-o themeprimary"></i>
+                                                    <span class="description">office</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <div class="notification-icon">
+                                                    <i class="fa fa-check bg-darkorange white"></i>
+                                                </div>
+                                                <div class="notification-body">
+                                                    <span class="title">Uncharted break</span>
+                                                    <span class="description">03:30 pm - 05:15 pm</span>
+                                                </div>
+                                                <div class="notification-extra">
+                                                    <i class="fa fa-clock-o darkorange"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <div class="notification-icon">
+                                                    <i class="fa fa-gift bg-warning white"></i>
+                                                </div>
+                                                <div class="notification-body">
+                                                    <span class="title">Kate birthday party</span>
+                                                    <span class="description">08:30 pm</span>
+                                                </div>
+                                                <div class="notification-extra">
+                                                    <i class="fa fa-calendar warning"></i>
+                                                    <i class="fa fa-clock-o warning"></i>
+                                                    <span class="description">at home</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <div class="notification-icon">
+                                                    <i class="fa fa-glass bg-success white"></i>
+                                                </div>
+                                                <div class="notification-body">
+                                                    <span class="title">Dinner with friends</span>
+                                                    <span class="description">10:30 pm</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-footer ">
+                                        <span>
+                                            Today, March 28
+                                        </span>
+                                        <span class="pull-right">
+                                            10°c
+                                            <i class="wi wi-cloudy"></i>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <!--/Notification Dropdown-->
+                            </li>
+                            <li>
+                                <a class="dropdown-toggle" data-toggle="dropdown" title="Mails" href="#">
+                                    <i class="icon fa fa-envelope"></i>
+                                    <span class="badge">3</span>
+                                </a>
+                                <!--Messages Dropdown-->
+                                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-messages">
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/avatars/divyia.jpg" class="message-avatar" alt="Divyia Austin">
+                                            <div class="message">
+                                                <span class="message-sender">
+                                                    Divyia Austin
+                                                </span>
+                                                <span class="message-time">
+                                                    2 minutes ago
+                                                </span>
+                                                <span class="message-subject">
+                                                    Here's the recipe for apple pie
+                                                </span>
+                                                <span class="message-body">
+                                                    to identify the sending application when the senders image is shown for the main icon
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/avatars/bing.png" class="message-avatar" alt="Microsoft Bing">
+                                            <div class="message">
+                                                <span class="message-sender">
+                                                    Bing.com
+                                                </span>
+                                                <span class="message-time">
+                                                    Yesterday
+                                                </span>
+                                                <span class="message-subject">
+                                                    Bing Newsletter: The January Issue‏
+                                                </span>
+                                                <span class="message-body">
+                                                    Discover new music just in time for the Grammy® Awards.
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/avatars/adam-jansen.jpg" class="message-avatar" alt="Divyia Austin">
+                                            <div class="message">
+                                                <span class="message-sender">
+                                                    Nicolas
+                                                </span>
+                                                <span class="message-time">
+                                                    Friday, September 22
+                                                </span>
+                                                <span class="message-subject">
+                                                    New 4K Cameras
+                                                </span>
+                                                <span class="message-body">
+                                                    The 4K revolution has come over the horizon and is reaching the general populous
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!--/Messages Dropdown-->
+                            </li>
+                            <li>
+                                <a class="dropdown-toggle" data-toggle="dropdown" title="Tasks" href="#">
+                                    <i class="icon fa fa-tasks"></i>
+                                    <span class="badge">4</span>
+                                </a>
+                                <!--Tasks Dropdown-->
+                                <ul class="pull-right dropdown-menu dropdown-tasks dropdown-arrow ">
+                                    <li class="dropdown-header bordered-darkorange">
+                                        <i class="fa fa-tasks"></i>
+                                        4 Tasks In Progress
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <span class="pull-left">Account Creation</span>
+                                                <span class="pull-right">65%</span>
+                                            </div>
+
+                                            <div class="progress progress-xs">
+                                                <div style="width:65%" class="progress-bar"></div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <span class="pull-left">Profile Data</span>
+                                                <span class="pull-right">35%</span>
+                                            </div>
+
+                                            <div class="progress progress-xs">
+                                                <div style="width:35%" class="progress-bar progress-bar-success"></div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <span class="pull-left">Updating Resume</span>
+                                                <span class="pull-right">75%</span>
+                                            </div>
+
+                                            <div class="progress progress-xs">
+                                                <div style="width:75%" class="progress-bar progress-bar-darkorange"></div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <span class="pull-left">Adding Contacts</span>
+                                                <span class="pull-right">10%</span>
+                                            </div>
+
+                                            <div class="progress progress-xs">
+                                                <div style="width:10%" class="progress-bar progress-bar-warning"></div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-footer">
+                                        <a href="#">
+                                            See All Tasks
+                                        </a>
+                                        <button class="btn btn-xs btn-default shiny darkorange icon-only pull-right"><i class="fa fa-check"></i></button>
+                                    </li>
+                                </ul>
+                                <!--/Tasks Dropdown-->
+                            </li>
+                            <!--li>
+                                <a class="wave in" id="chat-link" title="Chat" href="#">
+                                    <i class="icon glyphicon glyphicon-comment"></i>
+                                </a>
+                            </li-->
+                            <li>
+                                <a class="login-area dropdown-toggle" data-toggle="dropdown">
+                                    <div class="avatar" title="View your public profile">
+                                        <img src="assets/img/avatars/adam-jansen.jpg">
+                                    </div>
+                                    <section>
+                                        <h2><span class="profile"><span>Super Admin</span></span></h2>
+                                    </section>
+                                </a>
+                                <!--Login Area Dropdown-->
+                                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
+                                    <li class="username"><a>Super Admin</a></li>
+                                    <li class="email"><a>superadmin@pcr.com</a></li>
+                                    <!--Avatar Area-->
+                                    <li>
+                                        <div class="avatar-area">
+                                            <img src="assets/img/avatars/adam-jansen.jpg" class="avatar">
+                                            <span class="caption">Change Photo</span>
+                                        </div>
+                                    </li>
+                                    <!--Avatar Area-->
+                                    <li class="edit">
+                                        <a href="profile-superadmin.html" class="pull-left">Profile</a>
+                                        <!-- <a href="#" class="pull-right">Setting</a> -->
+                                    </li>
+                                    <!--Theme Selector Area-->
+                                    <li class="theme-area" style="display:none">
+                                        <ul class="colorpicker" id="skin-changer">
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#5DB2FF;" rel="assets/css/skins/blue.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#2dc3e8;" rel="assets/css/skins/azure.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#03B3B2;" rel="assets/css/skins/teal.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#53a93f;" rel="assets/css/skins/green.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#FF8F32;" rel="assets/css/skins/orange.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#cc324b;" rel="assets/css/skins/pink.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#AC193D;" rel="assets/css/skins/darkred.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#8C0095;" rel="assets/css/skins/purple.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#0072C6;" rel="assets/css/skins/darkblue.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#585858;" rel="assets/css/skins/gray.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#474544;" rel="assets/css/skins/black.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#001940;" rel="assets/css/skins/deepblue.min.css"></a></li>
+                                        </ul>
+                                    </li>
+                                    <!--/Theme Selector Area-->
+                                    <li class="dropdown-footer">
+                                        <a href="login.html">
+                                            Sign out
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!--/Login Area Dropdown-->
+                            </li>
+                            <!-- /Account Area -->
+                            <!--Note: notice that setting div must start right after account area list.
+                            no space must be between these elements-->
+                            <!-- Settings -->
+                        </ul>
+						<div class="setting">
+                            <a id="btn-setting" title="Setting" href="#">
+                                <i class="icon glyphicon glyphicon-cog"></i>
+                            </a>
+                        </div>
+						<div class="setting-container">
+                            <label>
+                                <input type="checkbox" id="checkbox_fixednavbar" checked>
+                                <span class="text">Fixed Navbar</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="checkbox_fixedsidebar" checked>
+                                <span class="text">Fixed SideBar</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="checkbox_fixedbreadcrumbs" checked>
+                                <span class="text">Fixed BreadCrumbs</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="checkbox_fixedheader" checked >
+                                <span class="text">Fixed Header</span>
+                            </label>
+                        </div>
+                        <!-- Settings -->
+                    </div>
+                </div>
+                <!-- /Account Area and Settings -->
+            </div>
+        </div>
+    </div>
+    <!-- /Navbar -->
+    <!-- Main Container -->
+    <div class="main-container container-fluid">
+        <!-- Page Container -->
+        <div class="page-container">
+            <!-- Page Sidebar -->
+            <div class="page-sidebar" id="sidebar">
+                <!-- Page Sidebar Header-->
+                <!-- <div class="sidebar-header-wrapper">
+                    <input type="text" class="searchinput" />
+                    <i class="searchicon fa fa-search"></i>
+                    <div class="searchhelper">Search Reports, Users or Notifications</div>
+                </div> -->
+				<div class="sidebar-header-wrapper">
+					<input type="text" class="searchinput" />
+                    <i class="searchicon fa fa-search"></i>
+				</div>
+                <!-- /Page Sidebar Header -->
+                <!-- Sidebar Menu -->
+                <ul class="nav sidebar-menu">
+                    <!--Dashboard-->
+                    <li>
+                        <a href="index-superadmin.html">
+                            <i class="menu-icon glyphicon glyphicon-home"></i>
+                            <span class="menu-text"> Dashboard </span>
+                        </a>
+                    </li>
+                    <!--Databoxes-->
+                    <li>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa fa-user" style="color:#53a93f;"></i>
+                            <span class="menu-text"> User Management </span>
+                            <i class="menu-expand"></i>
+                        </a>
+						<ul class="submenu">
+                            <li>
+                                
+								<a href="managemanagers.html">
+                                    <span class="menu-text">Manage Users</span>
+                                </a>
+								<!-- <a href="#">
+                                    <span class="menu-text">Manage Employee</span>
+                                </a> -->
+                            </li>
+                        </ul>
+                    </li>
+                    <!--Widgets-->
+                    <li>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa fa-file-text" style="color:#0072C6;"></i>
+                            <span class="menu-text"> Document Management </span>
+							<i class="menu-expand"></i>
+                        </a>
+						<ul class="submenu">
+                            <li>
+                                <a href="setpermissions.html">
+                                    <span class="menu-text">Manage Permissions</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="folders-documents.html" class="menu-dropdown">
+                                    <span class="menu-text">
+                                        Manage Files/Folders
+                                    </span>
+                                </a>
+                            </li>
+                        
+							<!-- <li>
+                                <a href="#">
+                                    <span class="menu-text">Document Validity</span>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </li>
+                    <!--UI Elements-->
+                    <li>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa fa-cogs" style="color:#FF8F32;"></i>
+                            <span class="menu-text"> System Administration </span>
+                            <i class="menu-expand"></i>
+                        </a>
+
+                        <ul class="submenu">
+                            <li>
+                                <a href="managecompanies.html">
+                                    <span class="menu-text">Manage Companies</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="managebranding.html" class="menu-dropdown">
+                                    <span class="menu-text">
+                                        Manage Branding
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="managestate.html">
+                                    <span class="menu-text">Manage States</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="manageraces.html">
+                                    <span class="menu-text">Manage Races</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="managefillingstatus.html">
+                                    <span class="menu-text">Filing Status</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="managecitizenships.html">
+                                    <span class="menu-text">Manage Citizenships</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="managedoctype.html">
+                                    <span class="menu-text">Manage I9 Documents</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="menu-text">Manage I9 Validations</span>
+                                </a>
+                            </li>
+							<li>
+                                <a href="manageduedates.html">
+                                    <span class="menu-text">Manage Due Dates</span>
+                                </a>
+                            </li>
+							<li>
+                                <a href="#">
+                                    <span class="menu-text">Onboarding Process</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+					
+					
+					<li>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa fa-cogs" style="color:#FF8F32;"></i>
+                            <span class="menu-text"> Administration </span>
+                            <i class="menu-expand"></i>
+                        </a>
+
+                        <ul class="submenu">
+                            <li>
+                                <a href="managedivisions.html">
+                                    <span class="menu-text">Manage Divisions</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="managedistricts.html" class="menu-dropdown">
+                                    <span class="menu-text">
+                                        Manage Districts
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="managelocations.html">
+                                    <span class="menu-text">Manage Locations</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="managepolicies.html">
+                                    <span class="menu-text">Manage Policies/Forms</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="managejobtitles.html">
+                                    <span class="menu-text">Manage Jobtitles</span>
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a href="managenotifications">
+                                    <span class="menu-text">Manage Notifications</span>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </li>
+                    <!--Tables-->
+                    <li>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa fa-exclamation-triangle" style="color:#AC193D;"></i>
+                            <span class="menu-text"> Notifications </span>
+							<i class="menu-expand"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="managenotifications.html">
+                                    <span class="menu-text">Manage Notifications</span>
+                                </a>
+                        </li>
+                        </ul>
+                    </li>
+					<li class="open">
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa fa-cogs" style="color:#FF8F32;"></i>
+                            <span class="menu-text"> Onboarding </span>
+                            <i class="menu-expand"></i>
+                        </a>
+                        <ul class="submenu">
+							<li>
+                                <a href="preonboard.html" class="menu-dropdown">
+                                    <span class="menu-text">Pre-Onboarding</span>
+                                </a>
+						   </li>
+						   <!-- <li>
+                                <a href="personalform.html">
+                                    <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Personal Details</span><p style="font-size:10px;">(Due: 03/09/16)</p>
+                                </a>
+							</li>
+							<li>
+                                <a href="contactform.html">
+                                    <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Contact Details</span><p style="font-size:10px;">(Due: 10/09/16)</p>
+                                </a>
+                            </li> -->
+							
+							<li>
+                                <a href="i9section-1.html">
+                                    <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Fill I9 Section-1</span><p style="font-size:10px;">(Due: 24/09/16)</p>
+                                </a>
+                            </li>
+							<li>
+                                <a href="attestation.html">
+                                    <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Fill I9 Section-2</span><p style="font-size:10px;">(Due: 01/10/16)</p>
+                                </a>
+                            </li>
+							<li>
+                                <a href="vsi2.html">
+                                    <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Fill VSI</span><p style="font-size:10px;">(Due: 17/09/16)</p>
+                                </a>
+                            </li>
+							<li>
+                                <a href="i9section-3.html">
+                                    <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Fill I9 Section-3</span><p style="font-size:10px;">(Due: 01/10/16)</p>
+                                </a>
+                            </li>
+							<li>
+                                <a href="state_w4.html">
+                                    <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Fill W4</span><p style="font-size:10px;">(Due: 08/10/16)</p>
+                                </a>
+                            </li>
+							<li>
+                                <a href="deposit.html">
+                                    <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Pay Deposit Details</span><p style="font-size:10px;">(Due: 15/10/16)</p>
+                                </a>
+                            </li>
+							<li>
+                                <a href="policies.html">
+                                    <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Read Policies</span><p style="font-size:10px;">(Due: 29/10/16)</p>
+                                </a>
+                            </li>
+							<!-- <li>
+                                <a href="sifqform.html">
+                                    <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>SIFQ Form</span><p style="font-size:10px;">(Due: 05/11/16)</p>
+                                </a>
+                            </li> -->
+							<li class="active">
+                                <a href="review.html">
+                                    <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Review Details</span><p style="font-size:10px;">(Due: 12/11/16)</p>
+                                </a>
+                            </li>
+							<li>
+                                <a href="signin.html">
+                                    <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Employee Sign</span><p style="font-size:10px;">(Due: 19/11/16)</p>
+                                </a>
+                            </li>
+							<li>
+                                <a href="managerlogin.html">
+                                    <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Manager Approval</span><p style="font-size:10px;">(Due: 26/11/16)</p>
+                                </a>
+                            </li>
+                            </li>
+						</ul>
+					</li>
+                    <li>
+                        <a href="reports.html">
+                            <i class="menu-icon fa fa-newspaper-o" style="color:#03B3B2;"></i>
+                            <span class="menu-text"> Reports </span>
+							
+                        </a>
+                    </li>
+                </ul>
+                <!-- /Sidebar Menu -->
+            </div>
+            <!-- /Page Sidebar -->
+     
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home themeprimary"></i>
+                            <a href="index-superadmin.html">Dashboard</a>
+                        </li>
+                        
+                        <li class="active">I9 Review</li>
+                    </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+                <!-- Page Header -->
+                <div class="page-header position-relative">
+                    <div class="header-title">
+                        <h1 class="themeprimary">
+                            I9 Review Details
+                        </h1>
+                    </div>
+                    <!--Header Buttons-->
+                    <div class="header-buttons">
+                        <a class="sidebar-toggler" href="#">
+                            <i class="fa fa-arrows-h"></i>
+                        </a>
+                        <a class="refresh" id="refresh-toggler" href="">
+                            <i class="glyphicon glyphicon-refresh"></i>
+                        </a>
+                        <a class="fullscreen" id="fullscreen-toggler" href="#">
+                            <i class="glyphicon glyphicon-fullscreen"></i>
+                        </a>
+                    </div>
+                    <!--Header Buttons End-->
+                </div>
+                <!-- /Page Header -->
+                <!-- Page Body -->
+                <div class="page-body">
+					<div class="col-lg-12 col-sm-12 col-xs-12" style="padding:0px;">
+                         <!-- <h5 class="row-title before-maincolor widget-caption">Add New Division</h5> -->
+							<div class="division-form">
+							
+												<form class="form-horizontal form-padding" role="form" id="hideform3">
+												<div class="col-md-11 col-lg-11 col-md-offset-1 col-lg-offset-1 col-sm-12 col-xs-12">
+													<h4 class="themeprimary"><strong>Empolyee Data Verfication - Review and Approve</strong>
+													</h4>
+													<hr class="forms-hr" style="margin: 10px 0px 15px 0px; width: 91%;">
+													<p><strong>Is all data correct? (Section-1)</strong></p>
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															New Hire Name:
+														</div>
+														<div class="col-md-6">
+															<a href="#">Fname Mname Lname</a>
+														</div>
+													</div>
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															U.S. Social Security #:
+														</div>
+														<div class="col-md-6">
+															<a href="#">123-45-6789</a>
+														</div>
+													</div>
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															Date of Birth:
+														</div>
+														<div class="col-md-6">
+															<a href="#">1/1/1976</a>
+														</div>
+													</div>
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															Address:
+														</div>
+														<div class="col-md-6">
+															<a href="#">New York, NY, 45454</a>
+														</div>
+													</div>
+													<!-- <div class="row" style="padding-bottom:16px">
+														<div class="col-md-6">
+															Transiator:
+														</div>
+														<div class="col-md-6">
+															<a href="#">No</a>
+														</div>
+													</div> -->
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															Citizenship Status:
+														</div>
+														<div class="col-md-6">
+															<a href="#">A Citizen of the United States</a>
+														</div>
+													</div>
+													<!-- <div class="row" style="padding-bottom:16px">
+														<div class="col-md-6">
+															Emergency Contact Name:
+														</div>
+														<div class="col-md-6">
+															<a href="#">Ramu Arvapalli</a>
+														</div>
+													</div>
+													<div class="row" style="padding-bottom:16px">
+														<div class="col-md-6">
+															Emergency Phone #:
+														</div>
+														<div class="col-md-6">
+															<a href="#">(946) 546-5656</a>
+														</div>
+													</div> -->
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															Form I-94 Admission Number:
+														</div>
+														<div class="col-md-6">
+															<a href="#">25868345</a>
+														</div>
+													</div>
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															Foriegn Passport Number:
+														</div>
+														<div class="col-md-6">
+															<a href="#">31680455</a>
+														</div>
+													</div>
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															Country of Issuance:
+														</div>
+														<div class="col-md-6">
+															<a href="#">United States of America</a>
+														</div>
+													</div>
+												
+													
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															Signature of the employee:
+														</div>
+														<div class="col-md-6">
+															<a href="#">Test</a>
+														</div>
+													</div>
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															Signature of Preparer:
+														</div>
+														<div class="col-md-6">
+															<a href="#">Test</a>
+														</div>
+													</div>
+													<p class="col-md-12 col-lg-12 col-sm-12 col-xs-12"><strong>Is all data correct? (Section-2)</strong></p>
+													<p class="col-md-12 col-lg-12 col-sm-12 col-xs-12">List A (Identity and Employment Authorization)</p>
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															Document Title:
+														</div>
+														<div class="col-md-6">
+															<a href="#">Document 1</a>
+														</div>
+													</div>
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															Issuing Authority:
+														</div>
+														<div class="col-md-6">
+															<a href="#">Document 1</a>
+														</div>
+													</div>
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															Document Number:
+														</div>
+														<div class="col-md-6">
+															<a href="#">424</a>
+														</div>
+													</div>
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															Expiration Date (if applicable)(mm/dd/yyyy):
+														</div>
+														<div class="col-md-6">
+															<a href="#">04/13/2017</a>
+														</div>
+													</div>
+													<p class="col-md-12 col-lg-12 col-sm-12 col-xs-12"><strong>Is all data correct? (Section-3)</strong></p>
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															<strong>A.</strong> New Hire Name:
+														</div>
+														<div class="col-md-6">
+															<a href="#">Fname Mname Lname</a>
+														</div>
+													</div>
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															<strong>B.</strong> Date of Rehire (if applicable)(mm/dd/yyyy):
+														</div>
+														<div class="col-md-6">
+															<a href="#">12/06/2016</a>
+														</div>
+													</div>
+													<p class="col-md-12 col-lg-12 col-sm-12 col-xs-12"><strong>C.</strong> If employee's previous grant of employment authorization has expired, provide the information for the document from List A or List C the employee presented that establishes current employment authorization in the space provided below.</p>
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															Document Title:
+														</div>
+														<div class="col-md-6">
+															<a href="#">Document 1</a>
+														</div>
+													</div>
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															Document Number:
+														</div>
+														<div class="col-md-6">
+															<a href="#">424</a>
+														</div>
+													</div>
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															Expiration Date (if applicable)(mm/dd/yyyy):
+														</div>
+														<div class="col-md-6">
+															<a href="#">04/13/2017</a>
+														</div>
+													</div>
+													<p class="col-md-12 col-lg-12"></p>
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															Signature of Employer or Authorized Representative:
+														</div>
+														<div class="col-md-6">
+															<a href="#">Test</a>
+														</div>
+													</div>
+													<div class="row col-md-6 col-lg-6 col-sm-12 col-xs-12" style="padding-bottom:16px">
+														<div class="col-md-6">
+															Print Name of Employer or Authorized Representative:
+														</div>
+														<div class="col-md-6">
+															<a href="#">Test</a>
+														</div>
+													</div>
+												</form>
+												
+							<hr class="forms-hr" style="margin: 10px 0px 15px 0px; width: 91%;">
+							<div class="col-md-6 col-md-offset-5 col-lg-offset-5 col-lg-6 col-sm-12 col-xs-12 form-btns">
+								<a href="signin.html" class="cancel-btn"><button  type="button" class="btn btn-md btn-primary">Next</button></a>
+							</div>
+					</div>
+				</div>
+                    
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+        </div>
+        <!-- /Page Container -->
+        <!-- Main Container -->
+<!-- <div class="footer">
+	<h6 class="text-center">2016 &copy; PCROnboard. All Rights Reserved</h6>
+</div> -->
+    </div>
+<footer class="footer">
+      <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
+    <!--Basic Scripts-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!--Beyond Scripts-->
+    <script src="assets/js/beyond.min.js"></script>
+
+    <!--Page Related Scripts-->
+    <script src="assets/js/fuelux/wizard/wizard-custom.js"></script>
+    <script src="assets/js/toastr/toastr.js"></script>
+	<!--Page Related Scripts-->
+    <script src="assets/js/charts/easypiechart/jquery.easypiechart.js"></script>
+    <script src="assets/js/charts/easypiechart/easypiechart-init.js"></script>
+	<!--Page Related Scripts-->
+    <script src="assets/js/inputmask/jasny-bootstrap.min.js"></script>
+	<!--Bootstrap Date Picker-->
+    <script src="assets/js/datetime/bootstrap-datepicker.js"></script>
+	
+	<script>
+	//--Bootstrap Date Picker--
+        $('.date-picker').datepicker();
+	</script>
+    <script>
+        $(window).bind("load", function () {
+            /*Sets Themed Colors Based on Themes*/
+            themethirdcolor = getThemeColorFromCss('themethirdcolor');
+            InitiateEasyPieChart.init();
+        });
+    </script>
+	<script type="text/javascript">
+        jQuery(function ($) {
+            $('#WiredWizard').wizard().on('finished', function (e) {
+                Notify('Thank You! All of your information saved successfully.', 'bottom-right', '5000', 'fa-check', true);
+            });
+        });
+    </script>
+	
+	<script>
+	$("#hideform").hide();
+	$("#hideform2").hide();
+		$("#hideform-btn").click(function(){
+    $("#hideform").show();
+	$("#hideform3").hide();
+});
+
+$("#hideform-btn2").click(function(){
+    $("#hideform2").show();
+	$("#hideform").hide();
+	$("#hideform3").hide();
+});
+	</script>
+    
+</body>
+<!--  /Body -->
+</html>

@@ -1,0 +1,1017 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Head -->
+<head>
+    <meta charset="utf-8" />
+    <title>I9 Section 1 Review</title>
+
+    <meta name="description" content="Dashboard" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!--Basic Styles-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/weather-icons.min.css" rel="stylesheet" />
+	<!--Page Related styles-->
+    <link href="assets/css/dataTables.bootstrap.css" rel="stylesheet" />
+
+    <!--Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <!--Beyond styles-->
+    <link id="beyond-link" href="assets/css/beyond.min.css" rel="stylesheet" type="text/css" />
+    
+    <link href="assets/css/demo.min.css" rel="stylesheet" />
+    <link href="assets/css/typicons.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link id="skin-link" href="" rel="stylesheet" type="text/css" />
+
+    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+    <script src="assets/js/skins.min.js"></script>
+	
+	<style>
+	.form-group p {margin-top:5px;}
+	.form-horizontal .control-label {text-align:left;}
+	.help-block {font-size:9px; line-height:16px;}
+	
+	input[type=checkbox]~.text, input[type=radio]~.text {margin-right:30px;}
+	.form-horizontal .form-group {margin-left:0px; margin-right:0px;}
+	
+	.instruction-pop input{width:85%; float:left; margin-right:10px;}
+	.popover {max-width:237px; left:742px;}
+	.page-sidebar .sidebar-menu li a {height:38px;}
+	.page-sidebar .sidebar-menu li a p {line-height:5px;}
+	
+	.form-horizontal .control-label {margin-bottom:5px;}
+	.social-security {float:left; width:30%;}
+	.social-security2 {float:left; width:20%;}
+	.social-security3 {float:left; width:35%;}
+	.social-security-label {float:left; width:100%;}
+	
+	.border-formgroup{border:1px solid #999; padding-bottom:5px; margin-bottom:-1px;}
+	.form-horizontal input {border:none; height:25px; padding:0px 12px;}
+	
+	textarea:hover, input[type="text"]:hover, input[type="password"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="date"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover, input[type="number"]:hover, input[type="email"]:hover, input[type="url"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="color"]:hover {border-color:transparent !Important;}
+	
+	.border-formgroup-right {border:1px solid #999; padding-bottom:5px; margin-bottom:-1px; border-right:none;}
+	.review-h4 h4 {padding:10px; border:1px solid #999; border-bottom:none; margin-bottom:-1px; background-color:#f5f5f5;}
+	.starthere { margin-bottom:10px;}
+	.starthere-h4 {font-size:17px; line-height:24px;}
+	.starthere-p {font-size:15px;}
+	.starthere-i {font-size:31px; float:left; margin-right:5px; margin-top:-7px;}
+	.border-bottom-input {border-bottom:1px solid #999 !important;}
+	
+	.qrcode-scan {margin:50px 0px 0px 0px; padding:5px; width:22%; height:271px;}
+	</style>
+</head>
+<!-- /Head -->
+<!-- Body -->
+<body>
+    <!-- Loading Container -->
+    <div class="loading-container">
+        <div class="loader"></div>
+    </div>
+    <!--  /Loading Container -->
+    <!-- Navbar -->
+    <div class="navbar">
+    <div class="navbar-inner">
+        <div class="navbar-container">
+            <!-- Navbar Barnd -->
+            <div class="navbar-header pull-left">
+                <a href="#" class="navbar-brand" style="margin-top:8px;">
+                    <!--small>
+                        <img src="~/assets/img/logo.png" alt="" />
+                    </small-->
+                    PCR Onboard
+                </a>
+            </div>
+            <!-- /Navbar Barnd -->
+            <!-- Sidebar Collapse -->
+            <div class="sidebar-collapse" id="sidebar-collapse">
+                <i class="collapse-icon fa fa-bars"></i>
+            </div>
+            <!-- /Sidebar Collapse -->
+            <!-- Account Area and Settings --->
+            <div class="navbar-header pull-right">
+                <div class="navbar-account">
+                    <ul class="account-area">
+                        <li>
+                            <a class="dropdown-toggle" data-toggle="dropdown" title="Notifications" href="#">
+                                <i class="icon fa fa-warning"></i>
+                            </a>
+                            <!--Notification Dropdown-->
+                            <ul class="pull-right dropdown-menu dropdown-arrow dropdown-notifications">
+                                <li>
+                                    <a href="#">
+                                        <div class="clearfix">
+                                            <div class="notification-icon">
+                                                <i class="fa fa-phone bg-themeprimary white"></i>
+                                            </div>
+                                            <div class="notification-body">
+                                                <span class="title">Skype meeting with Patty</span>
+                                                <span class="description">01:00 pm</span>
+                                            </div>
+                                            <div class="notification-extra">
+                                                <i class="fa fa-clock-o themeprimary"></i>
+                                                <span class="description">office</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="clearfix">
+                                            <div class="notification-icon">
+                                                <i class="fa fa-check bg-darkorange white"></i>
+                                            </div>
+                                            <div class="notification-body">
+                                                <span class="title">Uncharted break</span>
+                                                <span class="description">03:30 pm - 05:15 pm</span>
+                                            </div>
+                                            <div class="notification-extra">
+                                                <i class="fa fa-clock-o darkorange"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="clearfix">
+                                            <div class="notification-icon">
+                                                <i class="fa fa-gift bg-warning white"></i>
+                                            </div>
+                                            <div class="notification-body">
+                                                <span class="title">Kate birthday party</span>
+                                                <span class="description">08:30 pm</span>
+                                            </div>
+                                            <div class="notification-extra">
+                                                <i class="fa fa-calendar warning"></i>
+                                                <i class="fa fa-clock-o warning"></i>
+                                                <span class="description">at home</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="clearfix">
+                                            <div class="notification-icon">
+                                                <i class="fa fa-glass bg-success white"></i>
+                                            </div>
+                                            <div class="notification-body">
+                                                <span class="title">Dinner with friends</span>
+                                                <span class="description">10:30 pm</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="dropdown-footer ">
+                                    <span>
+                                        Today, March 28
+                                    </span>
+                                    <span class="pull-right">
+                                        10°c
+                                        <i class="wi wi-cloudy"></i>
+                                    </span>
+                                </li>
+                            </ul>
+                            <!--/Notification Dropdown-->
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle" data-toggle="dropdown" title="Mails" href="#">
+                                <i class="icon fa fa-envelope"></i>
+                                <span class="badge">3</span>
+                            </a>
+                            <!--Messages Dropdown-->
+                            <ul class="pull-right dropdown-menu dropdown-arrow dropdown-messages">
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/avatars/divyia.jpg" class="message-avatar" alt="Divyia Austin">
+                                        <div class="message">
+                                            <span class="message-sender">
+                                                Divyia Austin
+                                            </span>
+                                            <span class="message-time">
+                                                2 minutes ago
+                                            </span>
+                                            <span class="message-subject">
+                                                Here's the recipe for apple pie
+                                            </span>
+                                            <span class="message-body">
+                                                to identify the sending application when the senders image is shown for the main icon
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/avatars/bing.png" class="message-avatar" alt="Microsoft Bing">
+                                        <div class="message">
+                                            <span class="message-sender">
+                                                Bing.com
+                                            </span>
+                                            <span class="message-time">
+                                                Yesterday
+                                            </span>
+                                            <span class="message-subject">
+                                                Bing Newsletter: The January Issue‏
+                                            </span>
+                                            <span class="message-body">
+                                                Discover new music just in time for the Grammy® Awards.
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="assets/img/avatars/adam-jansen.jpg" class="message-avatar" alt="Divyia Austin">
+                                        <div class="message">
+                                            <span class="message-sender">
+                                                Nicolas
+                                            </span>
+                                            <span class="message-time">
+                                                Friday, September 22
+                                            </span>
+                                            <span class="message-subject">
+                                                New 4K Cameras
+                                            </span>
+                                            <span class="message-body">
+                                                The 4K revolution has come over the horizon and is reaching the general populous
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!--/Messages Dropdown-->
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle" data-toggle="dropdown" title="Tasks" href="#">
+                                <i class="icon fa fa-tasks"></i>
+                                <span class="badge">4</span>
+                            </a>
+                            <!--Tasks Dropdown-->
+                            <ul class="pull-right dropdown-menu dropdown-tasks dropdown-arrow ">
+                                <li class="dropdown-header bordered-darkorange">
+                                    <i class="fa fa-tasks"></i>
+                                    4 Tasks In Progress
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="clearfix">
+                                            <span class="pull-left">Account Creation</span>
+                                            <span class="pull-right">65%</span>
+                                        </div>
+
+                                        <div class="progress progress-xs">
+                                            <div style="width:65%" class="progress-bar"></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="clearfix">
+                                            <span class="pull-left">Profile Data</span>
+                                            <span class="pull-right">35%</span>
+                                        </div>
+
+                                        <div class="progress progress-xs">
+                                            <div style="width:35%" class="progress-bar progress-bar-success"></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="clearfix">
+                                            <span class="pull-left">Updating Resume</span>
+                                            <span class="pull-right">75%</span>
+                                        </div>
+
+                                        <div class="progress progress-xs">
+                                            <div style="width:75%" class="progress-bar progress-bar-darkorange"></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="clearfix">
+                                            <span class="pull-left">Adding Contacts</span>
+                                            <span class="pull-right">10%</span>
+                                        </div>
+
+                                        <div class="progress progress-xs">
+                                            <div style="width:10%" class="progress-bar progress-bar-warning"></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="dropdown-footer">
+                                    <a href="#">
+                                        See All Tasks
+                                    </a>
+                                    <button class="btn btn-xs btn-default shiny darkorange icon-only pull-right"><i class="fa fa-check"></i></button>
+                                </li>
+                            </ul>
+                            <!--/Tasks Dropdown-->
+                        </li>
+                        <!--li>
+                            <a class="wave in" id="chat-link" title="Chat" href="#">
+                                <i class="icon glyphicon glyphicon-comment"></i>
+                            </a>
+                        </li-->
+                        <li>
+                            <a class="login-area dropdown-toggle" data-toggle="dropdown">
+                                <div class="avatar" title="View your public profile">
+                                    <img src="assets/img/avatars/adam-jansen.jpg">
+                                </div>
+                                <section>
+                                    <h2><span class="profile"><span id="ProfileName"></span>Super Admin</span></h2>
+                                </section>
+                            </a>
+                            <!--Login Area Dropdown-->
+                            <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
+                                <li class="username"><a></a></li>
+                                <li class="email"><a id="UserEmail" style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">onboardsuperuser@gmail.com</a></li>
+                                <!--Avatar Area-->
+                                <li>
+                                    <div class="avatar-area">
+                                        <img src="assets/img/avatars/adam-jansen.jpg" class="avatar">
+                                        <span class="caption">Change Photo</span>
+                                    </div>
+                                </li>
+                                <!--Avatar Area-->
+                                <li class="edit">
+                                    <a href="profile-superadmin.html" class="pull-left" id="Profile">Profile</a>
+                                    <!-- <a href="#" class="pull-right">Setting</a> -->
+                                </li>
+                                <!--Theme Selector Area-->
+                                <li class="theme-area" style="display:none">
+                                    <ul class="colorpicker" id="skin-changer">
+                                        <li><a class="colorpick-btn" href="#" style="background-color:#5DB2FF;" rel="assets/css/skins/blue.min.css"></a></li>
+                                        <li><a class="colorpick-btn" href="#" style="background-color:#2dc3e8;" rel="assets/css/skins/azure.min.css"></a></li>
+                                        <li><a class="colorpick-btn" href="#" style="background-color:#03B3B2;" rel="assets/css/skins/teal.min.css"></a></li>
+                                        <li><a class="colorpick-btn" href="#" style="background-color:#53a93f;" rel="assets/css/skins/green.min.css"></a></li>
+                                        <li><a class="colorpick-btn" href="#" style="background-color:#FF8F32;" rel="assets/css/skins/orange.min.css"></a></li>
+                                        <li><a class="colorpick-btn" href="#" style="background-color:#cc324b;" rel="assets/css/skins/pink.min.css"></a></li>
+                                        <li><a class="colorpick-btn" href="#" style="background-color:#AC193D;" rel="assets/css/skins/darkred.min.css"></a></li>
+                                        <li><a class="colorpick-btn" href="#" style="background-color:#8C0095;" rel="assets/css/skins/purple.min.css"></a></li>
+                                        <li><a class="colorpick-btn" href="#" style="background-color:#0072C6;" rel="assets/css/skins/darkblue.min.css"></a></li>
+                                        <li><a class="colorpick-btn" href="#" style="background-color:#585858;" rel="assets/css/skins/gray.min.css"></a></li>
+                                        <li><a class="colorpick-btn" href="#" style="background-color:#474544;" rel="assets/css/skins/black.min.css"></a></li>
+                                        <li><a class="colorpick-btn" href="#" style="background-color:#001940;" rel="assets/css/skins/deepblue.min.css"></a></li>
+                                    </ul>
+                                </li>
+                                <!--/Theme Selector Area-->
+                                <li class="dropdown-footer">
+                                    <a href="login.html"  >
+                                        Sign out
+                                    </a>
+                                </li>
+                            </ul>
+                            <!--/Login Area Dropdown-->
+                        </li>
+                        <!-- /Account Area -->
+                        <!--Note: notice that setting div must start right after account area list.
+                        no space must be between these elements-->
+                        <!-- Settings -->
+                    </ul>
+                    <div class="setting">
+                        <a id="btn-setting" title="Setting" href="#">
+                            <i class="icon glyphicon glyphicon-cog"></i>
+                        </a>
+                    </div>
+                    <div class="setting-container">
+                        <label>
+                            <input type="checkbox" id="checkbox_fixednavbar">
+                            <span class="text">Fixed Navbar</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="checkbox_fixedsidebar">
+                            <span class="text">Fixed SideBar</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="checkbox_fixedbreadcrumbs">
+                            <span class="text">Fixed BreadCrumbs</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="checkbox_fixedheader">
+                            <span class="text">Fixed Header</span>
+                        </label>
+                    </div>
+                    <!-- Settings -->
+                </div>
+            </div>
+            <!-- /Account Area and Settings -->
+        </div>
+    </div>
+</div>
+    <!-- /Navbar -->
+    <!-- Main Container -->
+    <div class="main-container container-fluid">
+        <!-- Page Container -->
+        <div class="page-container">
+
+            <!-- Page Sidebar -->
+           <div class="page-sidebar" id="sidebar">
+                <!-- Page Sidebar Header-->
+				<div class="sidebar-header-wrapper">
+        <div class="form-group" id="OnlyIndex">
+            <div class="">
+                <select class="form-control" style="border-radius:0px;">
+                    <option value="0">Select Client...</option>
+                    <option value="1">Client 01</option>
+                    <option value="2">Client 02</option>
+                    <option value="3">Client 03</option>
+                    <option value="4">Client 04</option>
+                    <option value="5">Client 05</option>
+                </select>
+            </div>
+        </div>
+    </div>
+                <!-- /Page Sidebar Header -->
+                <!-- Sidebar Menu -->
+<ul class="nav sidebar-menu" id="All">
+       
+        <li class="active">
+            <a href="index-superadmin.html">
+                <i class="menu-icon glyphicon glyphicon-home" style="color:#2dc3e8"></i>
+                <span class="menu-text"> Dashboard </span>
+            </a>
+        </li>
+       
+        <li>
+            <a href="#" class="menu-dropdown">
+                <i class="menu-icon fa fa-user" style="color:#53a93f;"></i>
+                <span class="menu-text"> User Management </span>
+                <i class="menu-expand"></i>
+            </a>
+            <ul class="submenu">
+                <li>
+                    <a href="managemanagers.html">
+                        <span class="menu-text">Manage Users</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        
+         <li>
+            <a href="#" class="menu-dropdown">
+                <i class="menu-icon fa fa-file-text" style="color:#0072C6;"></i>
+                <span class="menu-text"> Document Management </span>
+                <i class="menu-expand"></i>
+            </a>
+            <ul class="submenu">
+                <li>
+                    <a href="folders-documents.html" class="menu-dropdown">
+                        <span class="menu-text">
+                            My Documents
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="sharedwithme.html" class="menu-dropdown">
+                        <span class="menu-text">Shared With Me</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        <li>
+            <a href="#" class="menu-dropdown">
+                <i class="menu-icon fa fa-cogs" style="color:#FF8F32;"></i>
+                <span class="menu-text"> System Administration </span>
+                <i class="menu-expand"></i>
+            </a>
+
+            <ul class="submenu">
+                <li>
+                    <a href="manageclients.html">
+                        <span class="menu-text">Manage Clients</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="managestate.html">
+                        <span class="menu-text">Manage States</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="manageraces.html">
+                        <span class="menu-text">Manage Races</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="filingstatus.html">
+                        <span class="menu-text">Filing Status</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="managecitizenships.html">
+                        <span class="menu-text">Manage Citizenships</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="managei9documents.html">
+                        <span class="menu-text">Manage I9 Documents</span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#">
+                        <span class="menu-text">Manage I9 Validations</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="managestages.html">
+                        <span class="menu-text">Manage Stages</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="onboardingprocess.html">
+                        <span class="menu-text">Onboarding Process</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#" class="menu-dropdown">
+                <i class="menu-icon fa fa-cogs" style="color:#FF8F32;"></i>
+                <span class="menu-text"> Administration </span>
+                <i class="menu-expand"></i>
+            </a>
+
+            <ul class="submenu">
+                <li>
+                    <a href="managedivisions.html">
+                        <span class="menu-text">Manage Divisions</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="managedistricts.html" class="menu-dropdown">
+                        <span class="menu-text">
+                            Manage Districts
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="managelocations.html">
+                        <span class="menu-text">Manage Locations</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="managepolicies.html">
+                        <span class="menu-text">Manage Policies/Forms</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="managejobtitles.html">
+                        <span class="menu-text">Manage Jobtitles</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+       <li>
+            <a href="#" class="menu-dropdown">
+                <i class="menu-icon fa fa-exclamation-triangle" style="color:#AC193D;"></i>
+                <span class="menu-text"> Notifications </span>
+                <i class="menu-expand"></i>
+            </a>
+            <ul class="submenu">
+                <li>
+                    <a href="managenotifications.html">
+                        <span class="menu-text">Manage Notifications</span>
+                    </a>
+                </li>
+				<li>
+                    <a href="notification-settings.html">
+                        <span class="menu-text">Notification Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="preonboarding.html" class="menu-dropdown">
+                <i class="menu-icon fa fa-users" style="color:#53a93f;"></i>
+                <span class="menu-text">Pre-Onboarding</span>
+            </a>
+        </li>
+        <!--li>
+            <a href="onboardinglist.html">
+                <i class="menu-icon fa fa-list" style="color:#03B3B2;"></i>
+                <span class="menu-text"> Onboarding List </span>
+
+            </a>
+        </li-->
+        <li class="">
+            <a href="#" class="menu-dropdown">
+                <i class="menu-icon fa fa-cogs" style="color:#FF8F32;"></i>
+                <span class="menu-text"> Onboarding </span>
+                <i class="menu-expand"></i>
+            </a>
+            <ul class="submenu">
+                <li>
+                    <a href="i9categories-superadmin.html" class="menu-dropdown">
+                        <i class="fa fa-list" style="color:#53a93f;"></i>
+                        <span class="menu-text">I9 Categories</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="i9section-1-superadmin.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Fill I9 Section-1</span><p style="font-size:10px;">(Due: 08/10/16)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="vsi2-superadmin.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Fill VSI</span><p style="font-size:10px;">(Due: 01/10/16)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="state_w4-superadmin.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Fill W-4</span><p style="font-size:10px;">(Due: 29/10/16)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="deposit-superadmin.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Pay Deposit Details</span><p style="font-size:10px;">(Due: 06/11/16)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="policies-superadmin.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Read Policies</span><p style="font-size:10px;">(Due: 13/11/16)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="review-superadmin.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Review Details</span><p style="font-size:10px;">(Due: 20/11/16)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="upload-document-superadmin.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Upload Documents</span><p style="font-size:10px;">(Due: 20/11/16)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="signin-superadmin.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Employee Sign</span><p style="font-size:10px;">(Due: 27/11/16)</p>
+                    </a>
+                </li>
+				<li>
+                    <a href="i9section-2-superadmin.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Fill I9 Section-2</span><p style="font-size:10px;">(Due: 11/12/16)</p>
+                    </a>
+                </li>
+				<li>
+                    <a href="i9section-3-superadmin.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Fill I9 Section-3</span><p style="font-size:10px;">(Due: 18/12/16)</p>
+                    </a>
+                </li>
+				<li>
+                    <a href="managerlogin-superadmin.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Manager Approval</span><p style="font-size:10px;">(Due: 04/12/16)</p>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="reports.html">
+                <i class="menu-icon fa fa-newspaper-o" style="color:#03B3B2;"></i>
+                <span class="menu-text"> Reports </span>
+            </a>
+        </li>
+    </ul>
+                <!-- /Sidebar Menu -->
+            </div>
+            <!-- /Page Sidebar -->
+     
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home themeprimary"></i>
+                            <a href="index-superadmin.html">Dashboard</a>
+                        </li>
+                 
+                        <li class="active">I9 Section-1</li>
+                    </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+                <!-- Page Header -->
+                <div class="page-header position-relative">
+                    <div class="header-title">
+                        <h1 class="themeprimary">
+                            I9 Section-1: Employee Information
+                        </h1>
+                    </div>
+                    <!--Header Buttons-->
+                    <div class="header-buttons">
+                        <a class="sidebar-toggler" href="#">
+                            <i class="fa fa-arrows-h"></i>
+                        </a>
+                        <a class="refresh" id="refresh-toggler" href="">
+                            <i class="glyphicon glyphicon-refresh"></i>
+                        </a>
+                        <a class="fullscreen" id="fullscreen-toggler" href="#">
+                            <i class="glyphicon glyphicon-fullscreen"></i>
+                        </a>
+                    </div>
+                    <!--Header Buttons End-->
+                </div>
+                <!-- /Page Header -->
+                <!-- Page Body -->
+                <div class="page-body">
+					<div class="col-lg-12 col-sm-12 col-xs-12" style="padding:0px;">
+                         <!-- <h5 class="row-title before-maincolor widget-caption">Add New Division</h5> -->
+							<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 division-form">
+							<form class="form-horizontal padding-form" role="form">
+								<div class="starthere">
+								<span class="fa fa-caret-right starthere-i"></span><span class="starthere-h4"><strong>START HERE:</strong></span> <span class="starthere-p"><strong>Read instructions carefully before completing this form. The instructions must be available, either in paper or electronically, during completion of this form. Employers are liable for errors in the completion of this form.</strong></span>
+								</div>
+								<div class="starthere">
+									<span class="starthere-h4"><strong>ANTI-DISCRIMINATION NOTICE:</strong></span> <span class="starthere-p">It is illegal to discriminate against work-authorized individuals. Employers <strong>CANNOT</strong></strong> specify which document(s) an employee may present to establish employment authorization and identity. The refusal to hire or continue to employ an individual because the documentation presented as a future expiration date may also constitute illegal discrimination.</span>
+								</div>
+								<div class="review-h4">
+									<h4><strong>Section 1. Employee Information and Attestation</strong><span style="font-size:15px; line-height:24px;">  (Employees must complete and sign Section 1 of Form I-9 no later than the first day of employment, but not before accepting a job offer.)</span></h4>
+								</div>
+								<div class="form-group border-formgroup-right col-md-3 col-lg-3 col-sm-4 col-xs-12" style="border-right:none; border-bottom:none;">
+									<label for="inputEmail3" class="control-label">Last Name (Family Name)</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+								<div class="form-group border-formgroup-right col-md-3 col-lg-3 col-sm-4 col-xs-12">
+									<label for="inputEmail3" class="control-label">First Name (Given Name)</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+								<div class="form-group border-formgroup-right col-md-2 col-lg-2 col-sm-4 col-xs-12">
+									<label for="inputEmail3" class="control-label">Middle Initial</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+								<div class="form-group border-formgroup col-md-4 col-lg-4 col-sm-4 col-xs-12">
+									<label for="inputEmail3" class="control-label">Other Last Names Used (if any)</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+								<div class="form-group border-formgroup-right col-md-3 col-lg-3 col-sm-4 col-xs-12">
+									<label for="inputEmail3" class="control-label">Address (Street Number and Name)</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+								<div class="form-group border-formgroup-right col-md-2 col-lg-2 col-sm-4 col-xs-12">
+									<label for="inputEmail3" class="control-label">Apt. Number</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+								<div class="form-group border-formgroup-right col-md-3 col-lg-3 col-sm-4 col-xs-12">
+									<label for="inputEmail3" class="control-label">City or Town</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+								<div class="form-group border-formgroup-right col-md-2 col-lg-2 col-sm-4 col-xs-12">
+									<label for="inputEmail3" class="control-label">State</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+								<div class="form-group border-formgroup col-md-2 col-lg-2 col-sm-4 col-xs-12">
+									<label for="inputEmail3" class="control-label">ZIP Code</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+								<div class="form-group border-formgroup-right col-md-3 col-lg-3 col-sm-4 col-xs-12">
+									<label for="inputEmail3" class="control-label">Date of Birth (mm/dd/yyyy)</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+								<div class="form-group border-formgroup-right col-md-3 col-lg-3 col-sm-4 col-xs-12">
+									<label for="inputEmail3" class="control-label social-security-label">U.S. Social Security Number</label>
+									<input type="text" class="form-control social-security" id="inputEmail3" style="border:1px solid #d5d5d5;"><span style="float:left; margin:4px 5px;">-</span>
+									<input type="text" class="form-control social-security2" id="inputEmail3" style="border:1px solid #d5d5d5;"><span style="float:left; margin:4px 5px;">-</span>
+									<input type="text" class="form-control social-security3" id="inputEmail3" style="border:1px solid #d5d5d5;">
+								</div>
+								<div class="form-group border-formgroup-right col-md-3 col-lg-3 col-sm-4 col-xs-12">
+									<label for="inputEmail3" class="control-label">Employee's E-mail Address</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+								<div class="form-group border-formgroup col-md-3 col-lg-3 col-sm-4 col-xs-12">
+									<label for="inputEmail3" class="control-label">Employee's Telephone Number</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+							</form>
+							<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="    padding: 0px 20px 5px 20px;">
+									<p class="starthere-p"><strong>I am aware that federal law provides for imprisonment and/or fines for false statements or use of false documents in connection with the completion of this form.</strong></p>
+									<p class="starthere-p"><strong>I attest, under penalty of perjury, that i am (check one of the following boxes):</strong></p>
+							</div>
+							<form class="form-horizontal padding-form" role="form" style="padding-top:0px;">
+								<div class="form-group border-formgroup col-md-12 col-lg-12 col-sm-12 col-xs-12">
+									<div class="checkbox">
+										<label>
+											<input name="form-field-checkbox" type="checkbox" class="main-color">
+											<span class="text">1. A Citizen of the United States</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-group border-formgroup col-md-12 col-lg-12 col-sm-12 col-xs-12">
+									<div class="checkbox">
+										<label>
+											<input name="form-field-checkbox" type="checkbox" class="main-color">
+											<span class="text">2. A noncitizen national of the United States (See instructions)</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-group border-formgroup col-md-12 col-lg-12 col-sm-12 col-xs-12">
+									<div class="checkbox">
+										<label>
+											<input name="form-field-checkbox" type="checkbox" class="main-color">
+											<span class="text">3. A lawful permanent resident (Alien Registration Number/USCIS Number)</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-group border-formgroup col-md-9 col-lg-9 col-sm-12 col-xs-12">
+									<div class="checkbox col-md-9 col-lg-9 col-sm-9 col-xs-12 no-padding-left no-padding-right">
+										<label>
+											<input name="form-field-checkbox" type="checkbox" class="main-color">
+											<span class="text" style="margin-right:0px;">4. An Alien Authorized to work until (expiration date, if applicable, mm/dd/yyyy):<p>Some aliens may write "N/A" in the expiration date field. (See instructions)</p></span>
+										</label>
+									</div>
+									<div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+										<input type="text" class="form-control border-bottom-input" id="inputEmail3">
+									</div>
+									<p class="col-md-12 col-lg-12 no-padding-left">Aliens authorized to work must provide only one of the following document numbers to complete Form I-9:An Alien Registration Number/USCIS Number OR Form I-94 Admission Number OR Foreign Passport Number.</p>
+									<div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 no-padding-left">
+										<label for="inputEmail3" class="control-label">1. Alien Registration Number/USCIS Number</label>
+									</div>
+									<div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+										<input type="text" class="form-control border-bottom-input" id="inputEmail3">
+									</div>
+									<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+										<h5 class="text-center"><strong>OR</strong></h5>
+									</div>
+									
+									<div class="col-md-5 col-lg-5 col-sm-5 col-xs-12 no-padding-left">
+										<label for="inputEmail3" class="control-label">2. Form I-94 Admission Number</label>
+									</div>
+									<div class="col-md-7 col-lg-7 col-sm-7 col-xs-12">
+										<input type="text" class="form-control border-bottom-input" id="inputEmail3">
+									</div>
+									<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+										<h5 class="text-center"><strong>OR</strong></h5>
+									</div>
+									
+									<div class="col-md-5 col-lg-5 col-sm-5 col-xs-12 no-padding-left">
+										<label for="inputEmail3" class="control-label">3. Foreign Passport Number</label>
+									</div>
+									<div class="col-md-7 col-lg-7 col-sm-7 col-xs-12">
+										<input type="text" class="form-control border-bottom-input" id="inputEmail3">
+									</div>
+									<div class="clearfix"></div>
+									<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 no-padding-left">
+										<label for="inputEmail3" class="control-label">Coutry of Issuance</label>
+									</div>
+									<div class="col-md-8 col-lg-8 col-sm-8 col-xs-12">
+										<input type="text" class="form-control border-bottom-input" id="inputEmail3">
+									</div>
+								</div>
+								<div class="form-group border-formgroup qrcode-scan col-md-3 col-lg-3 col-sm-6 col-xs-12 pull-right">
+									<p class="text-center">QR Code - Section 1</p>
+									<p class="text-center">Do Not Write In This Space</p>
+								</div>
+								<div class="form-group border-formgroup-right col-md-7 col-lg-7 col-sm-7 col-xs-12" style="margin-top:10px;">
+									<label for="inputEmail3" class="control-label">Signature of Employee</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+								<div class="form-group border-formgroup col-md-5 col-lg-5 col-sm-5 col-xs-12" style="margin-top:10px;">
+									<label for="inputEmail3" class="control-label">Today's Date (mm/dd/yyyy)</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+								<div class="form-group border-formgroup col-md-12 col-lg-12 col-sm-12 col-xs-12" style="margin-top:10px;">
+									<h4><strong>Preparer and/or Translator Certification (check one):</strong></h4>
+									<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 no-padding-left">
+										<div class="checkbox">
+											<label>
+												<input name="form-field-checkbox" type="checkbox">
+												<span class="text">I did not use a preparer or translator</span>
+											</label>
+										</div>
+									</div>
+									<div class="col-md-8 col-lg-8 col-sm-8 col-xs-12">
+										<div class="checkbox">
+											<label>
+												<input name="form-field-checkbox" type="checkbox">
+												<span class="text">A preparer(s) and/or translator(s) assisted the employee in completing Section 1.</span>
+											</label>
+										</div>
+									</div>
+									<span>(Fields below must be completed and signed when preparers and/or translators assist an employee in completing Section 1.)</span>
+								</div>
+								<p class="col-md-12 col-lg-12 no-padding-left"><strong>I attest, under penalty of perjury, that i have assisted in the completion of Section 1 of this form and that to the best of my knowledge the information is true and correct.</strong></p>
+								<div class="form-group border-formgroup-right col-md-8 col-lg-8 col-sm-8 col-xs-12">
+									<label for="inputEmail3" class="control-label">Signature of Preparer or Translator</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+								<div class="form-group border-formgroup col-md-4 col-lg-4 col-sm-4 col-xs-12">
+									<label for="inputEmail3" class="control-label">Today's Date (mm/dd/yyyy)</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+								<div class="form-group border-formgroup-right col-md-6 col-lg-6 col-sm-6 col-xs-12">
+									<label for="inputEmail3" class="control-label">Last Name (Family Name)</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+								<div class="form-group border-formgroup col-md-6 col-lg-6 col-sm-6 col-xs-12">
+									<label for="inputEmail3" class="control-label">First Name (Given Name)</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+								<div class="form-group border-formgroup-right col-md-5 col-lg-5 col-sm-5 col-xs-12">
+									<label for="inputEmail3" class="control-label">Address (Street Number and Name)</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+								<div class="form-group border-formgroup-right col-md-3 col-lg-3 col-sm-3 col-xs-12">
+									<label for="inputEmail3" class="control-label">City or Town</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+								<div class="form-group border-formgroup-right col-md-1 col-lg-1 col-sm-1 col-xs-12">
+									<label for="inputEmail3" class="control-label">State</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+								<div class="form-group border-formgroup col-md-3 col-lg-3 col-sm-3 col-xs-12">
+									<label for="inputEmail3" class="control-label">ZIP Code</label>
+									<input type="text" class="form-control" id="inputEmail3">
+								</div>
+							</form>
+							<div class="col-md-6 col-md-offset-5 col-lg-offset-5 col-lg-6 col-sm-12 col-xs-12 form-btns">
+								<!-- <a href="#" class="cancel-btn"><button  type="button" class="btn btn-md btn-primary">Cancel</button></a> -->
+								<a href="attestation.html" class="cancel-btn"><button  type="button" class="btn btn-md btn-primary">Next</button></a>
+							</div>
+					</div>
+				</div>
+                    
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+        </div>
+        <!-- /Page Container -->
+        <!-- Main Container -->
+<!-- <div class="footer">
+	<h6 class="text-center">2016 &copy; PCROnboard. All Rights Reserved</h6>
+</div> -->
+    </div>
+
+    <!--Basic Scripts-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!--Beyond Scripts-->
+    <script src="assets/js/beyond.js"></script>
+
+    <!--Page Related Scripts-->
+    <script src="assets/js/fuelux/wizard/wizard-custom.js"></script>
+    <script src="assets/js/toastr/toastr.js"></script>
+	<!--Page Related Scripts-->
+    <script src="assets/js/charts/easypiechart/jquery.easypiechart.js"></script>
+    <script src="assets/js/charts/easypiechart/easypiechart-init.js"></script>
+	<!--Page Related Scripts-->
+    <script src="assets/js/inputmask/jasny-bootstrap.min.js"></script>
+	<!--Bootstrap Date Picker-->
+    <script src="assets/js/datetime/bootstrap-datepicker.js"></script>
+	<!--Page Related Scripts-->
+    <script src="assets/js/toastr/toastr.js"></script>
+	
+	<script>
+	//--Bootstrap Date Picker--
+        $('.date-picker').datepicker();
+		
+	</script>
+    <script>
+        $(window).bind("load", function () {
+            /*Sets Themed Colors Based on Themes*/
+            themethirdcolor = getThemeColorFromCss('themethirdcolor');
+            InitiateEasyPieChart.init();
+        });
+		
+    </script>
+	<script type="text/javascript">
+        jQuery(function ($) {
+            $('#WiredWizard').wizard().on('finished', function (e) {
+                Notify('Thank You! All of your information saved successfully.', 'bottom-right', '5000', 'fa-check', true);
+            });
+        });
+    </script>
+	
+	<script>
+	$("#hideform").hide();
+	$("#hideform2").hide();
+		$("#hideform-btn").click(function(){
+    $("#hideform").show();
+	$("#hideform3").hide();
+});
+
+$("#hideform-btn2").click(function(){
+    $("#hideform2").show();
+	$("#hideform").hide();
+	$("#hideform3").hide();
+});
+	</script>
+	
+	<script>
+	
+	</script>
+    
+</body>
+<!--  /Body -->
+</html>

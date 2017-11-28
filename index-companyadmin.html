@@ -1,0 +1,1568 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Head -->
+<head>
+    <meta charset="utf-8" />
+    <title>PCR Onboard</title>
+
+    <meta name="description" content="Dashboard" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+
+    <!--Basic Styles-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/weather-icons.min.css" rel="stylesheet" />
+	<!--Page Related styles-->
+    <link href="assets/css/dataTables.bootstrap.css" rel="stylesheet" />
+
+    <!--Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <!--Beyond styles-->
+    <link id="beyond-link" href="assets/css/beyond.min.css" rel="stylesheet" type="text/css" />
+    
+    
+    <link href="assets/css/demo.min.css" rel="stylesheet" />
+    <link href="assets/css/typicons.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link id="skin-link" href="" rel="stylesheet" type="text/css" />
+
+    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+    <script src="assets/js/skins.min.js"></script>
+	<style>
+	.DTTT {display:none;}
+	#expandabledatatable_length {display:none;}
+	.chart-lg {height:253px;}
+	.table>tbody>tr>td {padding:6px; vertical-align:middle;}
+	.table thead>tr>th {font-size:14px;}
+	</style>
+</head>
+<!-- /Head -->
+<!-- Body -->
+<body>
+    <!-- Loading Container -->
+    <div class="loading-container">
+        <div class="loader"></div>
+    </div>
+    <!--  /Loading Container -->
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-container">
+                <!-- Navbar Barnd -->
+                <div class="navbar-header pull-left">
+                    <a href="#" class="navbar-brand" style="margin-top:8px;">
+                        <!--small>
+                            <img src="assets/img/logo.png" alt="" />
+                        </small-->
+						PCR Onboard
+                    </a>
+                </div>
+                <!-- /Navbar Barnd -->
+                <!-- Sidebar Collapse -->
+                <div class="sidebar-collapse" id="sidebar-collapse">
+                    <i class="collapse-icon fa fa-bars"></i>
+                </div>
+                <!-- /Sidebar Collapse -->
+                <!-- Account Area and Settings --->
+                <div class="navbar-header pull-right">
+                    <div class="navbar-account">
+                        <ul class="account-area">
+                            <li>
+                                <a class=" dropdown-toggle" data-toggle="dropdown" title="Notifications" href="#">
+                                    <i class="icon fa fa-warning"></i>
+                                </a>
+                                <!--Notification Dropdown-->
+                                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-notifications">
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <div class="notification-icon">
+                                                    <i class="fa fa-phone bg-themeprimary white"></i>
+                                                </div>
+                                                <div class="notification-body">
+                                                    <span class="title">Skype meeting with Patty</span>
+                                                    <span class="description">01:00 pm</span>
+                                                </div>
+                                                <div class="notification-extra">
+                                                    <i class="fa fa-clock-o themeprimary"></i>
+                                                    <span class="description">office</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <div class="notification-icon">
+                                                    <i class="fa fa-check bg-darkorange white"></i>
+                                                </div>
+                                                <div class="notification-body">
+                                                    <span class="title">Uncharted break</span>
+                                                    <span class="description">03:30 pm - 05:15 pm</span>
+                                                </div>
+                                                <div class="notification-extra">
+                                                    <i class="fa fa-clock-o darkorange"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <div class="notification-icon">
+                                                    <i class="fa fa-gift bg-warning white"></i>
+                                                </div>
+                                                <div class="notification-body">
+                                                    <span class="title">Kate birthday party</span>
+                                                    <span class="description">08:30 pm</span>
+                                                </div>
+                                                <div class="notification-extra">
+                                                    <i class="fa fa-calendar warning"></i>
+                                                    <i class="fa fa-clock-o warning"></i>
+                                                    <span class="description">at home</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <div class="notification-icon">
+                                                    <i class="fa fa-glass bg-success white"></i>
+                                                </div>
+                                                <div class="notification-body">
+                                                    <span class="title">Dinner with friends</span>
+                                                    <span class="description">10:30 pm</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-footer ">
+                                        <span>
+                                            Today, March 28
+                                        </span>
+                                        <span class="pull-right">
+                                            10°c
+                                            <i class="wi wi-cloudy"></i>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <!--/Notification Dropdown-->
+                            </li>
+                            <li>
+                                <a class="dropdown-toggle" data-toggle="dropdown" title="Mails" href="#">
+                                    <i class="icon fa fa-envelope"></i>
+                                    <span class="badge">3</span>
+                                </a>
+                                <!--Messages Dropdown-->
+                                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-messages">
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/avatars/divyia.jpg" class="message-avatar" alt="Divyia Austin">
+                                            <div class="message">
+                                                <span class="message-sender">
+                                                    Divyia Austin
+                                                </span>
+                                                <span class="message-time">
+                                                    2 minutes ago
+                                                </span>
+                                                <span class="message-subject">
+                                                    Here's the recipe for apple pie
+                                                </span>
+                                                <span class="message-body">
+                                                    to identify the sending application when the senders image is shown for the main icon
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/avatars/bing.png" class="message-avatar" alt="Microsoft Bing">
+                                            <div class="message">
+                                                <span class="message-sender">
+                                                    Bing.com
+                                                </span>
+                                                <span class="message-time">
+                                                    Yesterday
+                                                </span>
+                                                <span class="message-subject">
+                                                    Bing Newsletter: The January Issue‏
+                                                </span>
+                                                <span class="message-body">
+                                                    Discover new music just in time for the Grammy® Awards.
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/avatars/adam-jansen.jpg" class="message-avatar" alt="Divyia Austin">
+                                            <div class="message">
+                                                <span class="message-sender">
+                                                    Nicolas
+                                                </span>
+                                                <span class="message-time">
+                                                    Friday, September 22
+                                                </span>
+                                                <span class="message-subject">
+                                                    New 4K Cameras
+                                                </span>
+                                                <span class="message-body">
+                                                    The 4K revolution has come over the horizon and is reaching the general populous
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!--/Messages Dropdown-->
+                            </li>
+                            <li>
+                                <a class="dropdown-toggle" data-toggle="dropdown" title="Tasks" href="#">
+                                    <i class="icon fa fa-tasks"></i>
+                                    <span class="badge">4</span>
+                                </a>
+                                <!--Tasks Dropdown-->
+                                <ul class="pull-right dropdown-menu dropdown-tasks dropdown-arrow ">
+                                    <li class="dropdown-header bordered-darkorange">
+                                        <i class="fa fa-tasks"></i>
+                                        4 Tasks In Progress
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <span class="pull-left">Account Creation</span>
+                                                <span class="pull-right">65%</span>
+                                            </div>
+
+                                            <div class="progress progress-xs">
+                                                <div style="width:65%" class="progress-bar"></div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <span class="pull-left">Profile Data</span>
+                                                <span class="pull-right">35%</span>
+                                            </div>
+
+                                            <div class="progress progress-xs">
+                                                <div style="width:35%" class="progress-bar progress-bar-success"></div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <span class="pull-left">Updating Resume</span>
+                                                <span class="pull-right">75%</span>
+                                            </div>
+
+                                            <div class="progress progress-xs">
+                                                <div style="width:75%" class="progress-bar progress-bar-darkorange"></div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="clearfix">
+                                                <span class="pull-left">Adding Contacts</span>
+                                                <span class="pull-right">10%</span>
+                                            </div>
+
+                                            <div class="progress progress-xs">
+                                                <div style="width:10%" class="progress-bar progress-bar-warning"></div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-footer">
+                                        <a href="#">
+                                            See All Tasks
+                                        </a>
+                                        <button class="btn btn-xs btn-default shiny darkorange icon-only pull-right"><i class="fa fa-check"></i></button>
+                                    </li>
+                                </ul>
+                                <!--/Tasks Dropdown-->
+                            </li>
+                            <!--li>
+                                <a class="wave in" id="chat-link" title="Chat" href="#">
+                                    <i class="icon glyphicon glyphicon-comment"></i>
+                                </a>
+                            </li-->
+                            <li>
+                                <a class="login-area dropdown-toggle" data-toggle="dropdown">
+                                    <div class="avatar" title="View your public profile">
+                                        <img src="assets/img/avatars/adam-jansen.jpg">
+                                    </div>
+                                    <section>
+                                        <h2><span class="profile"><span>Super Admin</span></span></h2>
+                                    </section>
+                                </a>
+                                <!--Login Area Dropdown-->
+                                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
+                                    <li class="username"><a>Super Admin</a></li>
+                                    <li class="email"><a>superadmin@pcr.com</a></li>
+                                    <!--Avatar Area-->
+                                    <li>
+                                        <div class="avatar-area">
+                                            <img src="assets/img/avatars/adam-jansen.jpg" class="avatar">
+                                            <span class="caption">Change Photo</span>
+                                        </div>
+                                    </li>
+                                    <!--Avatar Area-->
+                                    <li class="edit">
+                                        <a href="profile.html" class="pull-left">Profile</a>
+                                        <!-- <a href="#" class="pull-right">Setting</a> -->
+                                    </li>
+                                    <!--Theme Selector Area-->
+                                    <li class="theme-area" style="display:none">
+                                        <ul class="colorpicker" id="skin-changer">
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#5DB2FF;" rel="assets/css/skins/blue.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#2dc3e8;" rel="assets/css/skins/azure.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#03B3B2;" rel="assets/css/skins/teal.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#53a93f;" rel="assets/css/skins/green.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#FF8F32;" rel="assets/css/skins/orange.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#cc324b;" rel="assets/css/skins/pink.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#AC193D;" rel="assets/css/skins/darkred.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#8C0095;" rel="assets/css/skins/purple.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#0072C6;" rel="assets/css/skins/darkblue.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#585858;" rel="assets/css/skins/gray.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#474544;" rel="assets/css/skins/black.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#001940;" rel="assets/css/skins/deepblue.min.css"></a></li>
+                                        </ul>
+                                    </li>
+                                    <!--/Theme Selector Area-->
+                                    <li class="dropdown-footer">
+                                        <a href="login.html">
+                                            Sign out
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!--/Login Area Dropdown-->
+                            </li>
+                            <!-- /Account Area -->
+                            <!--Note: notice that setting div must start right after account area list.
+                            no space must be between these elements-->
+                            <!-- Settings -->
+                        </ul>
+						<div class="setting">
+                            <a id="btn-setting" title="Setting" href="#">
+                                <i class="icon glyphicon glyphicon-cog"></i>
+                            </a>
+                        </div>
+						<div class="setting-container">
+                            <label>
+                                <input type="checkbox" id="checkbox_fixednavbar" checked>
+                                <span class="text">Fixed Navbar</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="checkbox_fixedsidebar" checked>
+                                <span class="text">Fixed SideBar</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="checkbox_fixedbreadcrumbs" checked>
+                                <span class="text">Fixed BreadCrumbs</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="checkbox_fixedheader" checked >
+                                <span class="text">Fixed Header</span>
+                            </label>
+                        </div>
+                        <!-- Settings -->
+                    </div>
+                </div>
+                <!-- /Account Area and Settings -->
+            </div>
+        </div>
+    </div>
+    <!-- /Navbar -->
+    <!-- Main Container -->
+    <div class="main-container container-fluid">
+        <!-- Page Container -->
+        <div class="page-container">
+
+            <!-- Page Sidebar -->
+            <div class="page-sidebar" id="sidebar">
+                <!-- Page Sidebar Header-->
+                <div class="sidebar-header-wrapper">
+					<div class="form-group">
+						<div class="col-sm-12">
+							<select class="form-control" style="border-radius:0px;">
+								<option value="0">Select Company...</option>
+								<option value="1">Company 01</option>
+								<option value="2">Company 02</option>
+								<option value="3">Company 03</option>
+								<option value="4">Company 04</option>
+								<option value="5">Company 05</option>
+							</select>
+						</div>
+					</div>
+				</div>
+                <!-- /Page Sidebar Header -->
+                <!-- Sidebar Menu -->
+                <ul class="nav sidebar-menu">
+        <!--Dashboard-->
+        <li class="active">
+            <a href="#">
+                <i class="menu-icon glyphicon glyphicon-home"></i>
+                <span class="menu-text"> Dashboard </span>
+            </a>
+        </li>
+        <!--Databoxes-->
+        <li>
+            <a href="#" class="menu-dropdown">
+                <i class="menu-icon fa fa-user"></i>
+                <span class="menu-text"> User Management </span>
+                <i class="menu-expand"></i>
+            </a>
+
+            <ul class="submenu">
+                <li>
+                    <a href="managemanagers.html">
+                        <span class="menu-text">Manage Manager</span>
+                    </a>
+                </li>
+			</ul>
+		</li>
+        <!--Widgets-->
+        <li>
+            <a href="#">
+                <i class="menu-icon fa fa-file-text"></i>
+                <span class="menu-text"> Document Management </span>
+            </a>
+        </li>
+        <!--UI Elements-->
+        <li>
+            <a href="#" class="menu-dropdown">
+                <i class="menu-icon fa fa-cogs"></i>
+                <span class="menu-text"> Administration </span>
+                <i class="menu-expand"></i>
+            </a>
+
+            <ul class="submenu">
+                <li>
+                    <a href="managedivisions.html">
+                        <span class="menu-text">Manage Divisions</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="managedistricts.html" class="menu-dropdown">
+                        <span class="menu-text">
+                            Manage Districts
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="managelocations.html">
+                        <span class="menu-text">Manage Locations</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="managepolicies.html">
+                        <span class="menu-text">Manage Policies/Forms</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="menu-text">Manage Jobtitles</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="menu-text">Manage Notifications</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!--Tables-->
+		<li>
+            <a href="#">
+                <i class="menu-icon fa fa-exclamation-triangle"></i>
+                <span class="menu-text"> Notifications </span>
+            </a>
+        </li>
+		<!--li>
+            <a href="preonboarding.html" class="menu-dropdown">
+                <i class="menu-icon fa fa-users" style="color:#53a93f;"></i>
+                <span class="menu-text">Pre-Onboarding</span>
+            </a>
+        </li>
+        <li>
+            <a href="onboardinglist.html">
+                <i class="menu-icon fa fa-list" style="color:#03B3B2;"></i>
+                <span class="menu-text"> Onboarding List </span>
+
+            </a>
+        </li-->
+        <li class="">
+            <a href="#" class="menu-dropdown">
+                <i class="menu-icon fa fa-cogs" style="color:#FF8F32;"></i>
+                <span class="menu-text"> Onboarding </span>
+                <i class="menu-expand"></i>
+            </a>
+            <ul class="submenu">
+                <li>
+                    <a href="i9categories.html" class="menu-dropdown">
+                        <i class="fa fa-list" style="color:#53a93f;"></i>
+                        <span class="menu-text">I9 Categories</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="i9section-1.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Fill I9 Section-1</span><p style="font-size:10px;">(Due: 08/10/16)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="vsi2.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Fill VSI</span><p style="font-size:10px;">(Due: 01/10/16)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="state_w4.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Fill W-4</span><p style="font-size:10px;">(Due: 29/10/16)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="deposit.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Pay Deposit Details</span><p style="font-size:10px;">(Due: 06/11/16)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="policies.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Read Policies</span><p style="font-size:10px;">(Due: 13/11/16)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="review.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Review Details</span><p style="font-size:10px;">(Due: 20/11/16)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="upload-document.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Upload Documents</span><p style="font-size:10px;">(Due: 20/11/16)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="signin.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Employee Sign</span><p style="font-size:10px;">(Due: 27/11/16)</p>
+                    </a>
+                </li>
+				<li>
+                    <a href="i9section-2.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Fill I9 Section-2</span><p style="font-size:10px;">(Due: 11/12/16)</p>
+                    </a>
+                </li>
+				<li>
+                    <a href="i9section-3.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Fill I9 Section-3</span><p style="font-size:10px;">(Due: 18/12/16)</p>
+                    </a>
+                </li>
+				<li>
+                    <a href="managerlogin.html">
+                        <span class="menu-text"><i class="fa fa-file-text-o" style="margin-right:10px;"></i>Manager Approval</span><p style="font-size:10px;">(Due: 04/12/16)</p>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!--li>
+            <a href="reports.html">
+                <i class="menu-icon fa fa-newspaper-o" style="color:#03B3B2;"></i>
+                <span class="menu-text"> Reports </span>
+            </a>
+        </li-->
+    </ul>
+                <!-- /Sidebar Menu -->
+            </div>
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home themeprimary"></i>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="active">Dashboard</li>
+                    </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+                <!-- Page Header -->
+                <div class="page-header position-relative">
+                    <div class="header-title">
+                        <h1>
+                            Dashboard
+                        </h1>
+                    </div>
+                    <!--Header Buttons-->
+                    <div class="header-buttons">
+                        <a class="sidebar-toggler" href="#">
+                            <i class="fa fa-arrows-h"></i>
+                        </a>
+                        <a class="refresh" id="refresh-toggler" href="">
+                            <i class="glyphicon glyphicon-refresh"></i>
+                        </a>
+                        <a class="fullscreen" id="fullscreen-toggler" href="#">
+                            <i class="glyphicon glyphicon-fullscreen"></i>
+                        </a>
+                    </div>
+                    <!--Header Buttons End-->
+                </div>
+                <!-- /Page Header -->
+                <!-- Page Body -->
+                <div class="page-body">
+                    <div class="row">
+                <!--div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="databox bg-white radius-bordered">
+                        <div class="databox-left bg-themesecondary">
+                            <div class="databox-piechart">
+                                <div data-toggle="easypiechart" class="easyPieChart" data-barcolor="#fff" data-linecap="butt" data-percent="47" data-animate="500" data-linewidth="3" data-size="47" data-trackcolor="rgba(255,255,255,0.1)"><span class="white font-90">47%</span></div>
+                            </div>
+                        </div>
+                        <div class="databox-right">
+                            <h3 class="databox-number themesecondary">26</h3>
+                            <h4 class="databox-text darkgray">Total Companies</h4>
+                            <div class="databox-stat themesecondary radius-bordered">
+                                <i class="stat-icon icon-lg fa fa-building"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div-->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="databox bg-white radius-bordered">
+                        <div class="databox-left bg-themethirdcolor">
+                            <div class="databox-piechart">
+                                <div data-toggle="easypiechart" class="easyPieChart" data-barcolor="#fff" data-linecap="butt" data-percent="69" data-animate="500" data-linewidth="3" data-size="47" data-trackcolor="rgba(255,255,255,0.2)" style="width: 47px; height: 47px; line-height: 47px;"><span class="white font-90">69%</span><canvas width="47" height="47"></canvas></div>
+                            </div>
+                        </div>
+                        <div class="databox-right">
+                            <span class="databox-number themethirdcolor">48</span>
+                            <div class="databox-text darkgray">Pending I9s</div>
+                            <div class="databox-stat themethirdcolor radius-bordered">
+                                <i class="stat-icon  icon-lg fa fa-file-text"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="databox bg-white radius-bordered">
+                        <div class="databox-left bg-themeprimary">
+                            <div class="databox-piechart">
+                                <div id="users-pie" data-toggle="easypiechart" class="easyPieChart" data-barcolor="#fff" data-linecap="butt" data-percent="59" data-animate="500" data-linewidth="3" data-size="47" data-trackcolor="rgba(255,255,255,0.1)" style="width: 47px; height: 47px; line-height: 47px;"><span class="white font-90">59%</span><canvas width="47" height="47"></canvas></div>
+                            </div>
+                        </div>
+                        <div class="databox-right">
+                            <span class="databox-number themeprimary">89</span>
+                            <div class="databox-text darkgray">Pending E-verify</div>
+                            <div class="databox-stat themeprimary radius-bordered">
+                                <i class="stat-icon  icon-lg fa fa-exclamation-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="databox bg-white radius-bordered">
+                        <div class="databox-left bg-themethird">
+                            <div class="databox-piechart">
+                                <div id="users-pie" data-toggle="easypiechart" class="easyPieChart" data-barcolor="#fff" data-linecap="butt" data-percent="59" data-animate="500" data-linewidth="3" data-size="47" data-trackcolor="rgba(255,255,255,0.1)" style="width: 47px; height: 47px; line-height: 47px;"><span class="white font-90">73%</span><canvas width="47" height="47"></canvas></div>
+                            </div>
+                        </div>
+                        <div class="databox-right">
+                            <span class="databox-number themefourthcolor">138</span>
+                            <div class="databox-text darkgray">Total Employees</div>
+                            <div class="databox-stat themefourthcolor radius-bordered">
+                                <i class="stat-icon  icon-lg fa fa-users"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="databox bg-white radius-bordered">
+                        <div class="databox-left bg-themethird">
+                            <div class="databox-piechart">
+                                <div id="users-pie" data-toggle="easypiechart" class="easyPieChart" data-barcolor="#fff" data-linecap="butt" data-percent="59" data-animate="500" data-linewidth="3" data-size="47" data-trackcolor="rgba(255,255,255,0.1)" style="width: 47px; height: 47px; line-height: 47px;"><span class="white font-90">73%</span><canvas width="47" height="47"></canvas></div>
+                            </div>
+                        </div>
+                        <div class="databox-right">
+                            <span class="databox-number themesecondary">73</span>
+                            <div class="databox-text darkgray">Recent Employees</div>
+                            <div class="databox-stat themesecondary radius-bordered">
+                                <i class="stat-icon  icon-lg fa fa-users"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="dashboard-box">
+                                        <!--div class="box-header">
+                                            <div class="deadline">
+                                                Remaining Days: 109
+                                            </div>
+                                        </div-->
+                                        <!--div class="box-progress">
+                                            <div class="progress-handle">day 20</div>
+                                            <div class="progress progress-xs progress-no-radius bg-whitesmoke">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                                </div>
+                                            </div>
+                                        </div-->
+										<div class="widget">
+                                        <div class="widget-header monthlyreport">
+                                            <h3 class="widget-caption">Monthly Report</h3>
+                                            <div class="widget-buttons">
+                                                <a href="#" data-toggle="config">
+                                                    <i class="fa fa-cog"></i>
+                                                </a>
+                                                <a href="#" data-toggle="maximize">
+                                                    <i class="fa fa-expand"></i>
+                                                </a>
+                                                <a href="#" data-toggle="collapse">
+                                                    <i class="fa fa-minus"></i>
+                                                </a>
+                                                <a href="#" data-toggle="dispose">
+                                                    <i class="fa fa-times"></i>
+                                                </a>
+                                            </div><!--Widget Buttons-->
+                                        </div><!--Widget Header-->
+                                        <div class="widget-body">
+                                            <div class="box-tabbs">
+                                            <div class="tabbable">
+                                                <ul class="nav nav-tabs tabs-flat  nav-justified" id="myTab11">
+                                                    <li class="active">
+                                                        <a data-toggle="tab" href="#realtime">
+                                                            Companies
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a data-toggle="tab" href="#visits">
+                                                            I9 Forms
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a data-toggle="tab" id="contacttab" href="#bandwidth">
+                                                            E-Verify
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a data-toggle="tab" href="#sales">
+                                                            New Employees
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content tabs-flat no-padding">
+                                                    <div id="realtime" class="tab-pane active padding-5 animated fadeInUp">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div id="dashboard-chart-realtime" class="chart chart-lg no-margin"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="visits" class="tab-pane  animated fadeInUp">
+                                                        <div class="row">
+                                                            <div class="col-lg-12 chart-container">
+                                                                <div id="dashboard-chart-visits" class="chart chart-lg no-margin" style="width:100%"></div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div id="bandwidth" class="tab-pane padding-10 animated fadeInUp">
+                                                        <div class="databox-sparkline bg-themeprimary">
+                                                            <span id="dashboard-bandwidth-chart" data-sparkline="compositeline" data-height="250px" data-width="100%" data-linecolor="#fff" data-secondlinecolor="#eee"
+                                                                  data-fillcolor="rgba(255,255,255,.1)" data-secondfillcolor="rgba(255,255,255,.25)"
+                                                                  data-spotradius="0"
+                                                                  data-spotcolor="#fafafa" data-minspotcolor="#fafafa" data-maxspotcolor="#ffce55"
+                                                                  data-highlightspotcolor="#fff" data-highlightlinecolor="#fff"
+                                                                  data-linewidth="2" data-secondlinewidth="2"
+                                                                  data-composite="500, 400, 100, 450, 300, 200, 100, 200">
+                                                                300,300,400,300,200,300,300,200
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div id="sales" class="tab-pane animated fadeInUp no-padding-bottom" style="padding:20px 20px 0 20px;">
+                                                        <div class="row">
+                                                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                                                <div class="databox databox-xlg databox-vertical databox-inverted databox-shadowed">
+                                                                    <div class="databox-top">
+                                                                        <div class="databox-sparkline">
+                                                                            <span data-sparkline="line" data-height="125px" data-width="100%" data-fillcolor="false" data-linecolor="themesecondary"
+                                                                                  data-spotcolor="#fafafa" data-minspotcolor="#fafafa" data-maxspotcolor="#ffce55"
+                                                                                  data-highlightspotcolor="#ffce55" data-highlightlinecolor="#ffce55"
+                                                                                  data-linewidth="1.5" data-spotradius="2">
+                                                                                1,2,4,3,5,6,8,7,11,14,11,12
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="databox-bottom no-padding text-align-center">
+                                                                        <span class="databox-number lightcarbon no-margin">224</span>
+                                                                        <!--span class="databox-text lightcarbon no-margin">Sale Unit / Hour</span-->
+
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                                                <div class="databox databox-xlg databox-vertical databox-inverted databox-shadowed">
+                                                                    <div class="databox-top">
+                                                                        <div class="databox-sparkline">
+                                                                            <span data-sparkline="line" data-height="125px" data-width="100%" data-fillcolor="false" data-linecolor="themefourthcolor"
+                                                                                  data-spotcolor="#fafafa" data-minspotcolor="#fafafa" data-maxspotcolor="#8cc474"
+                                                                                  data-highlightspotcolor="#8cc474" data-highlightlinecolor="#8cc474"
+                                                                                  data-linewidth="1.5" data-spotradius="2">
+                                                                                100,208,450,298,450,776,234,680,1100,1400,1000,1200
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="databox-bottom no-padding text-align-center">
+                                                                        <span class="databox-number lightcarbon no-margin">7063$</span>
+                                                                        <!--span class="databox-text lightcarbon no-margin">Income / Hour</span-->
+
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                                                <div class="databox databox-xlg databox-vertical databox-inverted databox-shadowed">
+                                                                    <div class="databox-top">
+                                                                        <div class="databox-piechart">
+                                                                            <div data-toggle="easypiechart" class="easyPieChart block-center"
+                                                                                 data-barcolor="themeprimary" data-linecap="butt" data-percent="80" data-animate="500"
+                                                                                 data-linewidth="8" data-size="125" data-trackcolor="#eee">
+                                                                                <span class="font-200"><i class="fa fa-gift themeprimary"></i></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="databox-bottom no-padding text-align-center">
+                                                                        <span class="databox-number lightcarbon no-margin">9</span>
+                                                                        <!--span class="databox-text lightcarbon no-margin">NEW ORDERS</span-->
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                                                <div class="databox databox-xlg databox-vertical databox-inverted  databox-shadowed">
+                                                                    <div class="databox-top">
+                                                                        <div class="databox-piechart">
+                                                                            <div data-toggle="easypiechart" class="easyPieChart block-center"
+                                                                                 data-barcolor="themethirdcolor" data-linecap="butt" data-percent="40" data-animate="500"
+                                                                                 data-linewidth="8" data-size="125" data-trackcolor="#eee">
+                                                                                <span class="white font-200"><i class="fa fa-tags themethirdcolor"></i></span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="databox-bottom no-padding text-align-center">
+                                                                        <span class="databox-number lightcarbon no-margin">11</span>
+                                                                        <!--span class="databox-text lightcarbon no-margin">NEW TICKETS</span-->
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div><!--Widget Body-->
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12 col-xs-12">
+                            <div class="widget">
+                                <div class="widget-header bordered-bottom bordered-themeprimary">
+                                    <i class="widget-icon fa fa-tasks themeprimary"></i>
+                                    <span class="widget-caption themeprimary">Task Board</span>
+                                </div><!--Widget Header-->
+                                <div class="widget-body no-padding">
+                                    <div class="task-container">
+                        
+                        <ul class="tasks-list">
+                            <li class="task-item">
+                                <div class="task-check">
+                                    <label>
+                                        <input type="checkbox" class="inverted">
+                                        <span class="text"></span>
+                                    </label>
+                                </div>
+                                <div class="task-state">
+                                    <span class="label label-orange">
+                                        Inactive
+                                    </span>
+                                </div>
+                                <div class="task-time">10 Min ago</div>
+                                <div class="task-body">Pending Management Approval</div>
+                                <div class="task-creator"><a href="">Super Admin</a></div>
+                                <div class="task-assignedto">assigned to you</div>
+                            </li>
+                            <li class="task-item">
+                                <div class="task-check">
+                                    <label>
+                                        <input type="checkbox" class="inverted">
+                                        <span class="text"></span>
+                                    </label>
+                                </div>
+                                <div class="task-state">
+                                    <span class="label label-palegreen">
+                                        Active
+                                    </span>
+                                </div>
+                                <div class="task-time">2 hours ago</div>
+                                <div class="task-body">Need further Information from Employee</div>
+                                <div class="task-creator"><a href="">Client 01</a></div>
+                                <div class="task-assignedto">assigned to you</div>
+                            </li>
+                            <li class="task-item">
+                                <div class="task-check">
+                                    <label>
+                                        <input type="checkbox" class="inverted">
+                                        <span class="text"></span>
+                                    </label>
+                                </div>
+                                <div class="task-state">
+                                    <span class="label label-palegreen">
+                                        Active
+                                    </span>
+                                </div>
+                                <div class="task-time">yesterday</div>
+                                <div class="task-body">Employee Onboarding Verification Pending</div>
+                                <div class="task-creator"><a href="">Super Admin</a></div>
+                                <div class="task-assignedto">assigned to Kim</div>
+                            </li>
+                        </ul>
+                    </div>
+                                </div><!--Widget Body-->
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="row">
+                                <div class="col-lg-12">
+                                    <div class="widget overflow-block">
+                                        <div class="widget-header bordered-main">
+                                            <i class="widget-icon fa fa-tags"></i>
+                                            <h3 class="widget-caption themeprimary">Recently Added Managers</h3>
+											<div class="widget-buttons">
+                                        <a href="#" data-toggle="maximize">
+                                            <i class="fa fa-expand"></i>
+                                        </a>
+                                        <a href="#" data-toggle="collapse">
+                                            <i class="fa fa-minus"></i>
+                                        </a>
+                                        <a href="#" data-toggle="dispose">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                    </div>
+                                        </div><!--Widget Header-->
+                                        <div class="widget-body  no-padding">
+                                            <div class="tickets-container">
+												   <div class="row">
+                                    <div class="col-sm-6 col-md-3 col-lg-3 col-xs-12" style="padding-left:0px;">
+										 <div class="form-group">
+													<div class="col-sm-12" style="padding-left:0px; margin-bottom:20px;">
+														<select class="form-control">
+															<option value="0">Recently Added Managers</option>
+															<option value="1">Total Managers List</option>
+														</select>
+													</div>
+												</div>
+								</div>
+								 <table class="table table-striped table-bordered table-hover dataTable no-footer" role="grid" aria-describedby="simpledatatable_info">
+                                        <thead class="themeprimary">
+                                            <tr role="row">
+                                                <th>
+                                                Id #
+                                            </th>
+                                            <th>
+                                                Name
+                                            </th>
+                                            <th>
+                                                Status
+                                            </th>
+                                            <th>
+                                                Email
+                                            </th>
+											<th>
+                                                Position
+                                            </th>
+											<th>
+                                                Location
+                                            </th>
+											<th>
+                                                Work Phone
+                                            </th>
+                                            <th>
+												Actions
+                                            </th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                01
+												</td>
+												<td>
+													Manager 1
+												</td>
+												<td>
+													Active
+												</td>
+												<td>
+													manager01@pcr.com
+												</td>
+												<td>
+													Manager
+												</td>
+												<td>
+													Division 1
+												</td>
+												<td>
+													(342)478 3489
+												</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-info btn-xs edit"><i class="fa fa-edit"></i> Edit</a>
+                                                    <a href="#" class="btn btn-danger btn-xs delete"><i class="fa fa-trash-o"></i> Delete</a>
+                                                </td>
+                                            </tr>
+											
+											<tr>
+                                                <td>
+                                                04
+												</td>
+												<td>
+													Manager 2
+												</td>
+												<td>
+													Active
+												</td>
+												<td>
+													manager02@pcr.com
+												</td>
+												<td>
+													Manager
+												</td>
+												<td>
+													Division 1
+												</td>
+												<td>
+													(423)654 8745
+												</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-info btn-xs edit"><i class="fa fa-edit"></i> Edit</a>
+                                                    <a href="#" class="btn btn-danger btn-xs delete"><i class="fa fa-trash-o"></i> Delete</a>
+                                                </td>
+                                            </tr>
+											
+											<tr>
+                                                <td>
+                                                03
+												</td>
+												<td>
+													Manager 3
+												</td>
+												<td>
+													Inactive
+												</td>
+												<td>
+													manager03@pcr.com
+												</td>
+												<td>
+													Manager
+												</td>
+												<td>
+													Division 3
+												</td>
+												<td>
+													(867)232 4534
+												</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-info btn-xs edit"><i class="fa fa-edit"></i> Edit</a>
+                                                    <a href="#" class="btn btn-danger btn-xs delete"><i class="fa fa-trash-o"></i> Delete</a>
+                                                </td>
+                                            </tr>
+											
+											<tr>
+                                                <td>
+                                                06
+												</td>
+												<td>
+													Manager 4
+												</td>
+												<td>
+													Active
+												</td>
+												<td>
+													manager04@pcr.com
+												</td>
+												<td>
+													Manager
+												</td>
+												<td>
+													Division 2
+												</td>
+												<td>
+													(357)123 5856
+												</td>
+                                                <td>
+                                                    <a href="#" class="btn btn-info btn-xs edit"><i class="fa fa-edit"></i> Edit</a>
+                                                    <a href="#" class="btn btn-danger btn-xs delete"><i class="fa fa-trash-o"></i> Delete</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                    </div>
+                                                <!--ul class="tickets-list">
+                                                    <li class="ticket-item">
+                                                        <div class="row">
+                                                            <div class="ticket-user col-lg-6 col-sm-12">
+                                                                <img src="assets/img/avatars/adam-jansen.jpg" class="user-avatar">
+                                                                <span class="user-name">Adam Johnson</span>
+                                                                <span class="user-at">at</span>
+                                                                <span class="user-company">Microsoft</span>
+                                                            </div>
+                                                            <div class="ticket-time  col-lg-4 col-sm-6 col-xs-12">
+                                                                <div class="divider hidden-md hidden-sm hidden-xs"></div>
+                                                                <i class="fa fa-clock-o"></i>
+                                                                <span class="time">1 Hours Ago</span>
+                                                            </div>
+                                                            <div class="ticket-type  col-lg-2 col-sm-6 col-xs-12">
+                                                                <span class="divider hidden-xs"></span>
+                                                                <span class="type">Issue</span>
+                                                            </div>
+                                                            <div class="ticket-state bg-palegreen">
+                                                                <i class="fa fa-check"></i>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="ticket-item">
+                                                        <div class="row">
+                                                            <div class="ticket-user col-lg-6 col-sm-12">
+                                                                <img src="assets/img/avatars/divyia.jpg" class="user-avatar">
+                                                                <span class="user-name">Divyia Phillips</span>
+                                                                <span class="user-at">at</span>
+                                                                <span class="user-company">Dribbble</span>
+                                                            </div>
+                                                            <div class="ticket-time  col-lg-4 col-sm-6 col-xs-12">
+                                                                <div class="divider hidden-md hidden-sm hidden-xs"></div>
+                                                                <i class="fa fa-clock-o"></i>
+                                                                <span class="time">3 Hours Ago</span>
+                                                            </div>
+                                                            <div class="ticket-type  col-lg-2 col-sm-6 col-xs-12">
+                                                                <span class="divider hidden-xs"></span>
+                                                                <span class="type">Payment</span>
+                                                            </div>
+                                                            <div class="ticket-state bg-palegreen">
+                                                                <i class="fa fa-check"></i>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="ticket-item">
+                                                        <div class="row">
+                                                            <div class="ticket-user col-lg-6 col-sm-12">
+                                                                <img src="assets/img/avatars/Matt-Cheuvront.jpg" class="user-avatar">
+                                                                <span class="user-name">Nicolai Larson</span>
+                                                                <span class="user-at">at</span>
+                                                                <span class="user-company">Google</span>
+                                                            </div>
+                                                            <div class="ticket-time  col-lg-4 col-sm-6 col-xs-12">
+                                                                <div class="divider hidden-md hidden-sm hidden-xs"></div>
+                                                                <i class="fa fa-clock-o"></i>
+                                                                <span class="time">18 Hours Ago</span>
+                                                            </div>
+                                                            <div class="ticket-type  col-lg-2 col-sm-6 col-xs-12">
+                                                                <span class="divider hidden-xs"></span>
+                                                                <span class="type">Issue</span>
+                                                            </div>
+                                                            <div class="ticket-state bg-darkorange">
+                                                                <i class="fa fa-times"></i>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="ticket-item">
+                                                        <div class="row">
+                                                            <div class="ticket-user col-lg-6 col-sm-12">
+                                                                <img src="assets/img/avatars/Sergey-Azovskiy.jpg" class="user-avatar">
+                                                                <span class="user-name">Bill Jackson</span>
+                                                                <span class="user-at">at</span>
+                                                                <span class="user-company">Mabna</span>
+                                                            </div>
+                                                            <div class="ticket-time  col-lg-4 col-sm-6 col-xs-12">
+                                                                <div class="divider hidden-md hidden-sm hidden-xs"></div>
+                                                                <i class="fa fa-clock-o"></i>
+                                                                <span class="time">2 days Ago</span>
+                                                            </div>
+                                                            <div class="ticket-type  col-lg-2 col-sm-6 col-xs-12">
+                                                                <span class="divider hidden-xs"></span>
+                                                                <span class="type">Payment</span>
+                                                            </div>
+                                                            <div class="ticket-state bg-palegreen">
+                                                                <i class="fa fa-check"></i>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="ticket-item">
+                                                        <div class="row">
+                                                            <div class="ticket-user col-lg-6 col-sm-12">
+                                                                <img src="assets/img/avatars/John-Smith.jpg" class="user-avatar">
+                                                                <span class="user-name">Eric Clapton</span>
+                                                                <span class="user-at">at</span>
+                                                                <span class="user-company">Musicker</span>
+                                                            </div>
+                                                            <div class="ticket-time  col-lg-4 col-sm-6 col-xs-12">
+                                                                <div class="divider hidden-md hidden-sm hidden-xs"></div>
+                                                                <i class="fa fa-clock-o"></i>
+                                                                <span class="time">2 days Ago</span>
+                                                            </div>
+                                                            <div class="ticket-type  col-lg-2 col-sm-6 col-xs-12">
+                                                                <span class="divider hidden-xs"></span>
+                                                                <span class="type">Info</span>
+                                                            </div>
+                                                            <div class="ticket-state bg-yellow">
+                                                                <i class="fa fa-info"></i>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul-->
+												<a href="#" class="btn btn-md margin-btn btn-primary pull-right">Add New Manager</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    </div>  
+                                       
+                                           
+                                             
+                                            
+                                     
+                        
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+
+       
+    <!--Basic Scripts-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!--Beyond Scripts-->
+    <script src="assets/js/beyond.js"></script>
+
+<!--Page Related Scripts-->
+    <script src="assets/js/datatable/jquery.dataTables.min.js"></script>
+    <script src="assets/js/datatable/ZeroClipboard.js"></script>
+    <script src="assets/js/datatable/dataTables.tableTools.min.js"></script>
+    <script src="assets/js/datatable/dataTables.bootstrap.min.js"></script>
+    <script src="assets/js/datatable/datatables-init.js"></script>
+    <!--Page Related Scripts-->
+    <!--Sparkline Charts Needed Scripts-->
+    <script src="assets/js/charts/sparkline/jquery.sparkline.js"></script>
+    <script src="assets/js/charts/sparkline/sparkline-init.js"></script>
+
+    <!--Easy Pie Charts Needed Scripts-->
+    <script src="assets/js/charts/easypiechart/jquery.easypiechart.js"></script>
+    <script src="assets/js/charts/easypiechart/easypiechart-init.js"></script>
+
+    <!--Flot Charts Needed Scripts-->
+    <script src="assets/js/charts/flot/jquery.flot.js"></script>
+    <script src="assets/js/charts/flot/jquery.flot.resize.js"></script>
+    <!-- <script src="assets/js/charts/flot/jquery.flot.pie.js"></script>-->
+    <script src="assets/js/charts/flot/jquery.flot.tooltip.js"></script>
+    <script src="assets/js/charts/flot/jquery.flot.orderBars.js"></script>
+
+    <script>
+	  InitiateExpandableDataTable.init();
+        // If you want to draw your charts with Theme colors you must run initiating charts after that current skin is loaded
+        $(window).bind("load", function () {
+
+            /*Sets Themed Colors Based on Themes*/
+            themeprimary = getThemeColorFromCss('themeprimary');
+            themesecondary = getThemeColorFromCss('themesecondary');
+            themethirdcolor = getThemeColorFromCss('themethirdcolor');
+            themefourthcolor = getThemeColorFromCss('themefourthcolor');
+            themefifthcolor = getThemeColorFromCss('themefifthcolor');
+
+            //Sets The Hidden Chart Width
+            $('#dashboard-bandwidth-chart')
+                .data('width', $('.box-tabbs')
+                    .width() - 20);
+
+            //-------------------------Visitor Sources Pie Chart----------------------------------------//
+         
+            
+
+            //------------------------------Visit Chart------------------------------------------------//
+            var data2 = [{
+                color: themesecondary,
+                label: "Direct Visits",
+                data: [[3, 2], [4, 5], [5, 4], [6, 11], [7, 12], [8, 11], [9, 8], [10, 14], [11, 12], [12, 16], [13, 9],
+                [14, 10], [15, 14], [16, 15], [17, 9]],
+
+                lines: {
+                    show: true,
+                    fill: true,
+                    lineWidth: .1,
+                    fillColor: {
+                        colors: [{
+                            opacity: 0
+                        }, {
+                            opacity: 0.4
+                        }]
+                    }
+                },
+                points: {
+                    show: false
+                },
+                shadowSize: 0
+            },
+                {
+                    color: themeprimary,
+                    label: "Referral Visits",
+                    data: [[3, 10], [4, 13], [5, 12], [6, 16], [7, 19], [8, 19], [9, 24], [10, 19], [11, 18], [12, 21], [13, 17],
+                    [14, 14], [15, 12], [16, 14], [17, 15]],
+                    bars: {
+                        order: 1,
+                        show: true,
+                        borderWidth: 0,
+                        barWidth: 0.4,
+                        lineWidth: .5,
+                        fillColor: {
+                            colors: [{
+                                opacity: 0.4
+                            }, {
+                                opacity: 1
+                            }]
+                        }
+                    }
+                },
+                {
+                    color: themethirdcolor,
+                    label: "Search Engines",
+                    data: [[3, 14], [4, 11], [5, 10], [6, 9], [7, 5], [8, 8], [9, 5], [10, 6], [11, 4], [12, 7], [13, 4],
+                    [14, 3], [15, 4], [16, 6], [17, 4]],
+                    lines: {
+                        show: true,
+                        fill: false,
+                        fillColor: {
+                            colors: [{
+                                opacity: 0.3
+                            }, {
+                                opacity: 0
+                            }]
+                        }
+                    },
+                    points: {
+                        show: true
+                    }
+                }
+            ];
+            var options = {
+                legend: {
+                    show: false
+                },
+                xaxis: {
+                    tickDecimals: 0,
+                    color: '#f3f3f3'
+                },
+                yaxis: {
+                    min: 0,
+                    color: '#f3f3f3',
+                    tickFormatter: function (val, axis) {
+                        return "";
+                    },
+                },
+                grid: {
+                    hoverable: true,
+                    clickable: false,
+                    borderWidth: 0,
+                    aboveData: false,
+                    color: '#fbfbfb'
+
+                },
+                tooltip: true,
+                tooltipOpts: {
+                    defaultTheme: false,
+                    content: " <b>%x May</b> , <b>%s</b> : <span>%y</span>",
+                }
+            };
+            var placeholder = $("#dashboard-chart-visits");
+            var plot = $.plot(placeholder, data2, options);
+
+            //------------------------------Real-Time Chart-------------------------------------------//
+            var realTimedata = [],
+                realTimedata2 = [],
+                totalPoints = 300;
+
+            var getSeriesObj = function () {
+                return [
+                {
+                    data: getRandomData(),
+                    lines: {
+                        show: true,
+                        lineWidth: 1,
+                        fill: true,
+                        fillColor: {
+                            colors: [
+                                {
+                                    opacity: 0
+                                }, {
+                                    opacity: 1
+                                }
+                            ]
+                        },
+                        steps: false
+                    },
+                    shadowSize: 0
+                }, {
+                    data: getRandomData2(),
+                    lines: {
+                        lineWidth: 0,
+                        fill: true,
+                        fillColor: {
+                            colors: [
+                                {
+                                    opacity: .5
+                                }, {
+                                    opacity: 1
+                                }
+                            ]
+                        },
+                        steps: false
+                    },
+                    shadowSize: 0
+                }
+                ];
+            };
+            function getRandomData() {
+                if (realTimedata.length > 0)
+                    realTimedata = realTimedata.slice(1);
+
+                // Do a random walk
+
+                while (realTimedata.length < totalPoints) {
+
+                    var prev = realTimedata.length > 0 ? realTimedata[realTimedata.length - 1] : 50,
+                        y = prev + Math.random() * 10 - 5;
+
+                    if (y < 0) {
+                        y = 0;
+                    } else if (y > 100) {
+                        y = 100;
+                    }
+                    realTimedata.push(y);
+                }
+
+                // Zip the generated y values with the x values
+
+                var res = [];
+                for (var i = 0; i < realTimedata.length; ++i) {
+                    res.push([i, realTimedata[i]]);
+                }
+
+                return res;
+            }
+            function getRandomData2() {
+                if (realTimedata2.length > 0)
+                    realTimedata2 = realTimedata2.slice(1);
+
+                // Do a random walk
+
+                while (realTimedata2.length < totalPoints) {
+
+                    var prev = realTimedata2.length > 0 ? realTimedata[realTimedata2.length] : 50,
+                        y = prev - 25;
+
+                    if (y < 0) {
+                        y = 0;
+                    } else if (y > 100) {
+                        y = 100;
+                    }
+                    realTimedata2.push(y);
+                }
+
+
+                var res = [];
+                for (var i = 0; i < realTimedata2.length; ++i) {
+                    res.push([i, realTimedata2[i]]);
+                }
+
+                return res;
+            }
+            // Set up the control widget
+            var updateInterval = 500;
+            var plot = $.plot("#dashboard-chart-realtime", getSeriesObj(), {
+                yaxis: {
+                    color: '#f3f3f3',
+                    min: 0,
+                    max: 100,
+                    tickFormatter: function (val, axis) {
+                        return "";
+                    }
+                },
+                xaxis: {
+                    color: '#f3f3f3',
+                    min: 0,
+                    max: 100,
+                    tickFormatter: function (val, axis) {
+                        return "";
+                    }
+                },
+                grid: {
+                    hoverable: true,
+                    clickable: false,
+                    borderWidth: 0,
+                    aboveData: false
+                },
+                colors: ['#eee', themeprimary],
+            });
+
+            function update() {
+
+                plot.setData(getSeriesObj());
+
+                plot.draw();
+                setTimeout(update, updateInterval);
+            }
+            update();
+
+
+            //-------------------------Initiates Easy Pie Chart instances in page--------------------//
+            InitiateEasyPieChart.init();
+
+            //-------------------------Initiates Sparkline Chart instances in page------------------//
+            InitiateSparklineCharts.init();
+        });
+
+    </script>
+    
+
+
+</body>
+<!--  /Body -->
+</html>

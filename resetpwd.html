@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<!--
+BeyondAdmin - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.6
+Version: 1.6.0
+Purchase: https://wrapbootstrap.com/theme/beyondadmin-adminapp-angularjs-mvc-WB06R48S4
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--Head-->
+<head>
+    <meta charset="utf-8" />
+    <title>Reset Password</title>
+
+    <meta name="description" content="login page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!--Basic Styles-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!--Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="assets/css/beyond.min.css" rel="stylesheet" />
+    <link href="assets/css/demo.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+   
+    <link id="skin-link" href="" rel="stylesheet" type="text/css" />
+
+    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+    <script src="assets/js/skins.min.js"></script>
+	
+	<style>
+	.input-group-addon {
+                background-color: transparent;
+            }
+
+            .input-group .input-group-addon {
+                background-image: none !important;
+            }
+
+            .login-container .loginbox .loginbox-submit {
+                padding: 10px;
+            }
+
+            .loginbox-container {
+                margin: 10px 37px 30px 37px;
+            }
+
+            .login-icon {
+                padding-top: 16px;
+            }
+
+            .login-container .loginbox {
+                width: 400px;
+            }
+
+            .login-container {
+                max-width: 400px;
+            }
+
+            .login-icon {
+                padding-top: 16px;
+            }
+
+            .loginbox-container a {
+                margin-top: 10px;
+            }
+
+            .loginbox-container button {
+                margin-top: 10px;
+            }
+
+            .login-container .loginbox {
+                padding-bottom: 20px;
+            }
+
+            .logo-color {
+                color: #2b6ddb;
+                font-weight: 600 !important;
+                margin-bottom: 39px;
+            }
+
+            .loginbox-container .form-group {
+                margin-bottom: 30px;
+            }
+
+            .login-btn {
+                padding: 5px 29px;
+            }
+	</style>
+</head>
+<!--Head Ends-->
+<!--Body-->
+<body class="body-height">
+    <div class="login-container animated fadeInDown">
+        <div class="loginbox bg-white">
+            <img src="assets/img/pcr-2.png" class="img-responsive login-icon" />
+            <hr>
+            <h5 class="text-center logo-color" style="font-size:17px">Reset Password</h5>           
+            <form class="loginbox-container">
+                <div class="form-group">
+                    <div class="input-group" style="margin-bottom:15px;">
+                        <input type="password" id="newpassword" class="form-control icon-border" placeholder="Enter New Password">
+                        <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="password"  id="cnfrmpassword" class="form-control icon-border" placeholder="Confirm Password">
+                        <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                    </div>
+                </div>
+                
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 loginbox-submit">
+                    <button type="button" class="login-btn center-block" onclick="location.href='login.html'">Update</button>
+                </div>
+            </form>            
+        </div>
+    </div>
+<script src="assets/js/toastr/toastr.js"></script>
+</body>
+<!--Body Ends-->
+</html>
