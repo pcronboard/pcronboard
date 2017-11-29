@@ -953,7 +953,8 @@ footer {
 }
 
 .folder-dropdown {
-    margin: 15px 20px;
+    /* margin: 15px 20px; */
+	margin:9px 5px;
 }
 
 
