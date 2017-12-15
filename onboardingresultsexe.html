@@ -6,7 +6,7 @@
 <!-- Head -->
 <head>
     <meta charset="utf-8" />
-    <title>OnBoarding Results</title>
+    <title>Onboarding Results</title>
 
     <meta name="description" content="blank page" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -463,7 +463,7 @@ ul.filter-list2 > li, ul.sub-filter2 > li {
                     </a>
                 </li>
 				<li class="active">
-                    <a href="folders-documents.html" class="menu-dropdown">
+                    <a href="onboardingresults.html" class="menu-dropdown">
                         <span class="menu-text">OnBoarding Results</span>
                     </a>
                 </li>
@@ -694,7 +694,7 @@ ul.filter-list2 > li, ul.sub-filter2 > li {
             <a href="index-superadmin.html">Dashboard</a>
         </li>
 
-        <li class="active">OnBoarding Results</li>
+        <li class="active">Onboarding Results</li>
     </ul>
 </div>
 <!-- /Page Breadcrumb -->
@@ -702,7 +702,7 @@ ul.filter-list2 > li, ul.sub-filter2 > li {
 <div class="page-header position-relative">
     <div class="header-title">
         <h1 class="themeprimary">
-            OnBoarding Results
+            Onboarding Results
         </h1>
     </div>
     <!--Header Buttons-->
@@ -800,28 +800,7 @@ ul.filter-list2 > li, ul.sub-filter2 > li {
                                                 <td>
                                                 2
 												</td>
-												<td style="text-align:left;">
-												<i class="fa fa-folder-open folder-color" style="float:left;"></i>
-													<ul class="filter-list">
-   
-    <li class="lihide" style="float:left">
-        <a id="first1" href="#" data-filter=".filter1">Nursing License instructions</a>
-        <ul class="sub-filter">
-            <li class="hideli">
-                <a id="first11" href="onboardingresultsexe.html" data-filter=".filter1.filtera">Joe Smith-Nurse Position ID:TTDKDIDK</a>
-<!--
-                <ul class="sub-filter" style="float:left;">
-                    <li>
-                        <a id="first111" href="#" data-filter=".filtera.filteri">Nursing License Instructions</a>
-                    </li>
-                    
-                </ul>
--->
-            </li>
-           
-				</ul>
-				</li></ul>
-												</td>
+												<td style="text-align:left"><i class="fa fa-file-text-o file-color"></i> Nursing License Instructions</td>
 												<td style="text-align:left;">
 													General
 												</td>
@@ -847,28 +826,7 @@ ul.filter-list2 > li, ul.sub-filter2 > li {
                                                 <td>
                                                 1
 												</td>
-												<td style="text-align:left;">
-												<i class="fa fa-folder-open folder-color" style="float:left;"></i>
-													<ul class="filter-list2">
-   
-    <li class="lihide2" style="float:left;   margin-left: -27px;">
-        <a id="first2" href="#" data-filter=".filter12">Vaccinations Instructions</a>
-        <ul class="sub-filter2">
-            <li class="hideli2">
-                <a id="first22"  href="onboardingresultsexe.html" data-filter=".filter12.filtera2">Joe Smith-Nurse Position ID:TTDKDIDK</a>
-<!--
-                <ul class="sub-filter2" style="float:left;">
-                    <li>
-                        <a id="first222"  href="#" data-filter=".filtera2.filteri2">Nursing License Instructions</a>
-                    </li>
-                    
-                </ul>
--->
-            </li>
-           
-				</ul>
-				</li></ul>
-												</td>
+											   <td style="text-align:left"><i class="fa fa-file-text-o file-color"></i> Vaccinations Instructions </td>
 												<td style="text-align:left;">
 													General
 												</td>
@@ -1329,13 +1287,13 @@ ul.filter-list2 > li, ul.sub-filter2 > li {
 });
 
 $(function () {
-$('#first2').on('click', function () {
-    var toToggle = $(this).next('.sub-filter2'); 
-         $('.lihide2>a').hide(); 
-         $(this).parents('.sub-filter2').find('.sub-filter2').not(toToggle).show();
-         $(this).parents('.sub-filter2').find('.hideli2>a').hide();
-         toToggle.toggle();
-  }); 
+    $('#first2').on('click', function () {
+        var toToggle = $(this).next('.sub-filter2');
+        $('.lihide2>a').hide();
+        $(this).parents('.sub-filter2').find('.sub-filter2').not(toToggle).show();
+        $(this).parents('.sub-filter2').find('.hideli2>a').hide();
+        toToggle.toggle();
+    });
 });
 
 	</script>
