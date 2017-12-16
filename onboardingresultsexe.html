@@ -762,6 +762,22 @@ ul.filter-list2 > li, ul.sub-filter2 > li {
         <a href="javascript:void(0);" class="btn btn-primary" id="btnAddFileorFolder" data-toggle="modal" data-target=".Addfolder">&nbsp;&nbsp;Add File/Folder</a>
     </div>
     <div class="col-lg-12 col-sm-12 col-xs-12 manage-division" style="padding:0px;">
+        <!-- Home And Back Button start-->
+    <div class="col-md-12">
+            <div style="margin: 5px 5px 5px 0px; overflow:hidden;">
+                <a class="btn btn-sm btn-default" id="homeroot" onclick="GoToHome(0)" style="float:left;width:33px;margin-right: 3px;margin-left:5px"><i class="fa fa-home"></i></a>
+                <a class="btn btn-sm btn-default " id="backtoParent" onclick="backParent($('#hdnParentId').val())" style="float:left;width:33px"><i class="fa fa-arrow-left"></i></a>
+               <span style="margin-left: 5px"><i class="fa fa-folder-open folder-color"></i></span><a  href="#" data-filter=".filter1"> Cleveland Clinic RN </a>/<span style="margin-left:5px"><a  href="#" data-filter=".filter1"> Joe Smith-Nurse Position ID:TTDKDIDK</a></span>
+                <div id="navigationmenu" style=""></div>
+                <div class="btn-group pull-right">
+                    <ul class="dropdown-menu">
+                        <li><a id="addNewFolder" onclick="ToggleDocumentAddFolder(true)"><i class="fa fa-folder"></i> Folder</a></li>
+                        <li><a onclick="ToggleDocumentAddnewfile(true)" id="addNewFile"><i class="fa fa-file"></i> File</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     <!-- Home And Back Button start-->
         <div class="well">
             <div class="table-responsive">
                 
@@ -769,13 +785,13 @@ ul.filter-list2 > li, ul.sub-filter2 > li {
                                         <thead>
                                             <tr role="row">
                                                 <th>
-                                                Document Id&nbsp;&nbsp;&nbsp;
+                                              ID&nbsp;&nbsp;&nbsp;
                                             </th>
                                             <th style="text-align:left; width:300px !important">
-                                                Name
+                                               Package Name
                                             </th>
                                             <th style="text-align:left;">
-                                                Document Type&nbsp;&nbsp;&nbsp;
+                                              Type&nbsp;&nbsp;&nbsp;
                                             </th>
                                             <th style="text-align:left;">
                                                 Who has Access?&nbsp;&nbsp;&nbsp;
@@ -789,7 +805,7 @@ ul.filter-list2 > li, ul.sub-filter2 > li {
 											<th>
 												Valid Upto&nbsp;&nbsp;
                                             </th>
-											<th style="width:144px;">
+											<th style="width:144px; text-align: center">
 												Actions
                                             </th>
                                             </tr>
@@ -816,7 +832,7 @@ ul.filter-list2 > li, ul.sub-filter2 > li {
 												<td>
 													
 												</td>
-                                               <td valign="middle" style="width:144px;"><a href="javascript:void(0);" class="" data-toggle="modal" data-target=".EditFolder" data-placement="top" data-original-title="Edit"><i class="fa fa-pencil-square-o editpopover"></i></a>
+                                               <td valign="middle" style="width:144px;text-align: center;"><a href="javascript:void(0);" class="" data-toggle="modal" data-target=".EditFolder" data-placement="top" data-original-title="Edit"><i class="fa fa-pencil-square-o editpopover"></i></a>
 											   <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Delete" id="bootbox-confirm" class=""><i class="fa fa-trash-o deletepopover"></i> </a>
 											   <a href="#" class="" data-toggle="tooltip" data-placement="top" id="ShareClick" data-original-title="Share"><i class="fa fa-share-square-o sharepopover"></i></a>
 											   </td>
@@ -842,7 +858,7 @@ ul.filter-list2 > li, ul.sub-filter2 > li {
 												<td>
 													
 												</td>
-                                               <td valign="middle" style="width:144px;"><a href="javascript:void(0);" class="" data-toggle="tooltip" data-target=".EditFolder" data-placement="top" data-original-title="Edit"><i class="fa fa-pencil-square-o editpopover"></i></a>
+                                               <td valign="middle" style="width:144px;text-align: center"><a href="javascript:void(0);" class="" data-toggle="tooltip" data-target=".EditFolder" data-placement="top" data-original-title="Edit"><i class="fa fa-pencil-square-o editpopover"></i></a>
 											   <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Delete" id="bootbox-confirm" class=""><i class="fa fa-trash-o deletepopover"></i> </a>
 											   <a href="#" class="" data-toggle="tooltip" data-placement="top" id="ShareClick" data-original-title="Share"><i class="fa fa-share-square-o sharepopover"></i></a>
 											   </td>
@@ -874,13 +890,15 @@ ul.filter-list2 > li, ul.sub-filter2 > li {
                             </select>
                         </div>
                         <div id="divFileType" hidden>
-                            <label for="inputEmail3" class="col-sm-6 col-md-3 col-sm-offset-1 col-lg-3 col-xs-12 col-md-offset-2 col-lg-offset-2 control-label no-padding-right">Document Type :</label>
+                            <label for="inputEmail3" class="col-sm-6 col-md-3 col-sm-offset-1 col-lg-3 col-xs-12 col-md-offset-2 col-lg-offset-2 control-label no-padding-right">Type :</label>
                             <div class="col-sm-5 col-xs-12">
                                 <select class="form-select form-control" id="categoryType" style="margin-bottom:8px;">
                                     <option value="General" selected>General</option>
-                                    <option value="Policy">Policy</option>
+<!--                                    <option value="Policy">Policy</option>-->
                                 </select>
+                                
                             </div>
+                            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#plusbtn">+</button>
                         </div>
                     </div>
 
@@ -979,14 +997,15 @@ ul.filter-list2 > li, ul.sub-filter2 > li {
                         </div>
                     </div>
                     <div class="form-group" id="divEditFileType" hidden="" style="display: block;">
-                        <label for="inputEmail3" class="col-sm-5 col-md-2 col-sm-offset-1 col-lg-2 col-xs-12 col-md-offset-3 col-lg-offset-3 control-label employee-inputcol">Document Type :</label>
+                        <label for="inputEmail3" class="col-sm-5 col-md-2 col-sm-offset-1 col-lg-2 col-xs-12 col-md-offset-3 col-lg-offset-3 control-label employee-inputcol">Type :</label>
                         <div class="col-sm-4">
                             <select class="form-select form-control" id="categoryTypeEdit" style="margin-bottom:8px;">
                                 <option value="Select">--Select Type--</option>
                                 <option value="General">General</option>
-                                <option value="Policy">Policy</option>
+<!--                                <option value="Policy">Policy</option>-->
                             </select>
                         </div>
+                        <button href="javascript:void(0);" class="btn btn-primary btn-sm" id="btnAddFileorFolder" data-toggle="modal" data-target=".Addbtn">+</button>
                     </div>
                     <div class="form-group">
                         <label for="inputEmail3" class="col-sm-5 col-md-2 col-sm-offset-1 col-lg-2 col-xs-12 col-md-offset-3 col-lg-offset-3 control-label employee-inputcol">Description :</label>
@@ -1069,6 +1088,38 @@ ul.filter-list2 > li, ul.sub-filter2 > li {
     </div>
 </div>
 <!--/Modal-->
+                  <!--Modal + -->
+       <div id="plusbtn" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title text-center" id="myLargeModalLabel"><strong>Type</strong></h4>
+                <input type="hidden" id="hdnDocumentId" value="191">
+            </div>
+      <div class="modal-body">
+          <label for="inputEmail3" class="col-sm-5 col-md-2 col-sm-offset-1 col-lg-2 col-xs-12 col-md-offset-3 col-lg-offset-3 control-label employee-inputcol">Type :</label>
+        <div class="col-sm-4">
+                            <select class="form-select form-control" id="categoryTypeEdit" style="margin-bottom:8px;">
+                                <option value="Select">--Select Type--</option>
+<!--                                <option value="General">General</option>-->
+                            <option value="Policy">Policy</option>
+                            </select>
+                        </div>
+          <hr class="location-hr">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center center-block">
+                    <button class="btn btn-primary btn-md btnSearch" onclick="UpdatedocumentDetails('/Manager/UpdateDocument');" id="btnSave">Save</button>
+                    <button class="btn btn-warning btn-md btnSearch" data-dismiss="modal" id="btnCancel">Cancel</button>
+                </div>
+      </div>
+        
+    </div>
+
+  </div>
+</div>
+        <!--Modal + End-->
 
             </div>
             <!-- /Page Content -->
