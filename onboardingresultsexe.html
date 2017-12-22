@@ -588,7 +588,7 @@ ul.filter-list2 > li, ul.sub-filter2 > li {
         <li>
             <a href="preonboarding.html" class="menu-dropdown">
                 <i class="menu-icon fa fa-users" style="color:#53a93f;"></i>
-                <span class="menu-text">Pre-Onboarding</span>
+                <span class="menu-text">Manage Pre-Onboarding</span>
             </a>
         </li>
         <!--li>
@@ -767,7 +767,7 @@ ul.filter-list2 > li, ul.sub-filter2 > li {
             <div style="margin: 5px 5px 5px 0px; overflow:hidden;">
                 <a class="btn btn-sm btn-default" id="homeroot" onclick="GoToHome(0)" style="float:left;width:33px;margin-right: 3px;margin-left:5px"><i class="fa fa-home"></i></a>
                 <a class="btn btn-sm btn-default " id="backtoParent" onclick="backParent($('#hdnParentId').val())" style="float:left;width:33px"><i class="fa fa-arrow-left"></i></a>
-               <span style="margin-left: 5px"><i class="fa fa-folder-open folder-color"></i></span><a  href="#" data-filter=".filter1"> Cleveland Clinic RN </a>/<span style="margin-left:5px"><a  href="#" data-filter=".filter1"> Joe Smith-Nurse Position ID:TTDKDIDK</a></span>
+               <span style="margin-left: 5px"><i class="fa fa-folder-open folder-color"></i></span><a  href="onboardingresults.html" data-filter=".filter1"> Nursing License Instructions </a>/<span style="margin-left:5px"><a  href="onboardingresults.html#" data-filter=".filter1"> Joe Smith-Nurse Position ID:TTDKDIDK</a></span>
                 <div id="navigationmenu" style=""></div>
                 <div class="btn-group pull-right">
                     <ul class="dropdown-menu">
@@ -1087,13 +1087,10 @@ ul.filter-list2 > li, ul.sub-filter2 > li {
         </div>
     </div>
 </div>
-<!--/Modal-->
-                  <!--Modal + -->
-       <div id="plusbtn" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
+<!--/Modal--> <!--Modal +-->
+      <div class="modal fade" id="plusbtn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
       <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 <h4 class="modal-title text-center" id="myLargeModalLabel"><strong>Type</strong></h4>
@@ -1102,11 +1099,14 @@ ul.filter-list2 > li, ul.sub-filter2 > li {
       <div class="modal-body">
           <label for="inputEmail3" class="col-sm-5 col-md-2 col-sm-offset-1 col-lg-2 col-xs-12 col-md-offset-3 col-lg-offset-3 control-label employee-inputcol">Type :</label>
         <div class="col-sm-4">
+             <input type="text" class="form-select form-control" id="txtFolderName" style="margin-bottom:8px;" placeholder="Folder/File Name">
+<!--
                             <select class="form-select form-control" id="categoryTypeEdit" style="margin-bottom:8px;">
                                 <option value="Select">--Select Type--</option>
-<!--                                <option value="General">General</option>-->
+                                <option value="General">General</option>
                             <option value="Policy">Policy</option>
                             </select>
+-->
                         </div>
           <hr class="location-hr">
                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center center-block">
