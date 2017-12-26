@@ -55,6 +55,28 @@
     background-color: #f7a54a;
     color: #fff;
 }
+.page-header .header-buttons a {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    z-index: 1029;
+    height: 37px;
+    width: 36px;
+    margin-right: 5px;
+    padding: 8px 10px;
+    color: #dfdfdf;
+    -webkit-transition: all .218s ease;
+    -moz-transition: all .218s ease;
+    -o-transition: all .218s ease;
+    transition: all .218s ease;
+    float: right;
+}
+.page-header .header-buttons a:nth-child(4):before{
+background-color: transparent !important;
+}
+.page-header .header-buttons a:nth-child(5):before{
+background-color: transparent !important;
+}
 
 	</style>
 </head>
@@ -642,22 +664,20 @@
                     </div>
                     <!--Header Buttons-->
                     <div class="header-buttons">
-                        <a class="sidebar-toggler" href="#">
-                            <i class="fa fa-arrows-h"></i>
-                        </a>
-                        <a class="refresh" id="refresh-toggler" href="">
-                            <i class="glyphicon glyphicon-refresh"></i>
-                        </a>
-                        <a class="fullscreen" id="fullscreen-toggler" href="#">
-                            <i class="glyphicon glyphicon-fullscreen"></i>
-                        </a>
-						
-          <div class="btn-group pull-right folder-dropdown cust-btn-top">
-		  
-            <button type="button" id="AddUserView" class="btn btn-md btn-primary pull-right" onClick="location.href='reminder.html'">Remind</button>
-        </div>
-                    </div>
+        <a class="sidebar-toggler" href="#">
+            <i class="fa fa-arrows-h"></i>
+        </a>
+        <a class="refresh" id="refresh-toggler" href="">
+            <i class="glyphicon glyphicon-refresh"></i>
+        </a>
+        <a class="fullscreen" id="fullscreen-toggler" href="#">
+            <i class="glyphicon glyphicon-fullscreen"></i>
+        </a>
+        <a class="btn btn-primary pull-right" style="width:auto; padding:3px; color:white;margin-top:3px;" href="reports.html"><i class="fa fa-reply-all"></i>Back to Reports</a>
+		<a class="btn btn-primary pull-right" style="width:auto; padding:8px; color:white;margin-top:3px;" href="reminder.html">Remind</a>
+    </div>
                     <!--Header Buttons End-->
+			
                 </div>
                 <!-- /Page Header -->
                 <!-- Page Body -->
